@@ -1,12 +1,30 @@
 <html>
     <head>
         <title>TIME TABLE</title>
-        <style type="text/css" src="timetable.css"></style>
+        <style>
+            .details
+            {
+                padding: 0 600 0 600px;
+                margin: 40 10 40 10px;
+                
+            }
+            #tt{
+                background-color: bisque;
+            }
+            #ed
+            {
+                background-color: azure;
+            }
+            .timetable
+            {
+                padding: 0 500 0 500px;
+            }
+        </style>
         <script type="text/javascript" src="timetable.js"></script>
     </head>
     <body>
         <div class="details">
-        <fieldset>
+        <fieldset id='ed'>
             <legend>Enter Details</legend>
             <form>
                 <table>
@@ -61,8 +79,8 @@
         </fieldset>
         </div>
 
-        <div id="timetable">
-            <fieldset>
+        <div class="timetable">
+            <fieldset id=tt>
                     <legend>TIMETABLE</legend>
                         <table>
                             <tr>
