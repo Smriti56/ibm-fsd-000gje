@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>TIME TABLE</title>
+        <style type="text/css" src="timetable.css"></style>
+        <script type="text/javascript" src="timetable.js"></script>
+    </head>
+    <body>
+        <div class="details">
+        <fieldset>
+            <legend>Enter Details</legend>
+            <form>
+                <table>
+                    <tr>
+                        <th>Name of Instructor:</th>
+                        <td><select id="teacher">
+                                <option >Teacher 1</option>
+                                <option >Teacher2</option>
+                            </select><td>
+                    </tr>
+                    <tr>
+                        <th>Class:</th>
+                        <td><select id="class">
+                                <option value="A">Class A</option>
+                                <option value="B">Class B</option>
+                            </select>
+                        <td>
+                    </tr>
+                    <tr>
+                        <th>Time:</th>
+                        <td><select id="time">
+                                <option value="t1">10a.m.-11a.m.</option>
+                                <option value="t2">11a.m.-12a.m.</option>
+                                <option value="t3">12p.m.-1p.m.</option>
+                                <option value="t4">1p.m.-2p.m.</option>
+                             </select>
+                        <td>
+                     </tr>
+                     <tr>
+                        <th>Subjects:</th>
+                        <td><select id="subj">
+                        <option value="Maths">Maths</option>
+                                <option value="Physics">physics</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Sports">Sports</option>
+                            </td>
+                        <!-- <td><input type="radio" name="sub" id="sub" value="physics">Physics</td>
+                        <td><input type="radio" name="sub" id="sub" value="chemistry">Chemistry</td>
+                        </tr>
+                    
+                    </tr>
+                    <tr>
+                            <td></td>
+                            <td><input type="radio" name="sub" id="sub" value="maths">Maths</td>
+                            <td><input type="radio" name="sub" id="sub"value="sports">Sports</td>                 -->
+                    </tr>
+                </select>
+                
+                </table>
+                <input type="button" value="Submit" onclick="assign()">
+            </form>
+        </fieldset>
+        </div>
+
+        <div id="timetable">
+            <fieldset>
+                    <legend>TIMETABLE</legend>
+                        <table>
+                            <tr>
+                            <th>TIME</th>
+                            <th>CLASS A</th>
+                            <th>CLASS B</th>
+                        </tr>      
+                        <tr>
+                            <th rowspan="2" id="time1">10:00am-11:00am</th>
+                            <td><input type="text" id="att1" readonly></td>
+                            <td><input type="text" id="btt1"readonly></td>
+                        </tr>
+                        <tr>
+                                
+                                <td><input type="text" id="ats1" readonly></td>
+                                <td><input type="text" id="bts1"readonly></td>
+                            </tr>
+
+                        <tr>
+                            <th rowspan="2" id="time2">11:00pm-12:00pm</th>
+                            <td><input type="text" id="att2" readonly></td>
+                            <td><input type="text" id="btt2" readonly></td>
+                        </tr>
+                        <tr>
+                                
+                                <td><input type="text" id="ats2" readonly></td>
+                                <td><input type="text" id="bts2"readonly></td>
+                            </tr>
+                        <tr>
+                            <th rowspan="2" id="time3">12:00pm-1:00pm</th>
+                            <td><input type="text" id="att3" readonly></td>
+                            <td><input type="text" id="btt3" readonly></td>
+                        </tr>
+                        <tr>
+                                <td><input type="text" id="ats3" readonly></td>
+                                <td><input type="text" id="bts3"readonly></td>
+                            </tr>
+                                
+                        <tr>
+                            <th rowspan="2"id="time4">1:00pm-2:00pm</th>
+                            <td><input type="text" id="att4" readonly></td>
+                            <td><input type="text" id="btt4" readonly></td>
+                        </tr>
+                        <tr>
+                                <td><input type="text" id="ats4" readonly></td>
+                                <td><input type="text" id="bts4"readonly></td>
+                            </tr>
+                        </table>
+                </fieldset>
+
+        </div>
+        
+
+    </body>
+</html>
