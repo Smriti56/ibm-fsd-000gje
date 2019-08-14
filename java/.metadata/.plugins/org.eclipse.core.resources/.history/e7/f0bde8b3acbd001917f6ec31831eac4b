@@ -1,0 +1,45 @@
+package sort;
+
+import java.util.Arrays;
+
+public class Tester {
+
+	
+		public void sortArray (int arr[]) {
+			Arrays.sort(arr);
+			for(int a:arr)
+			{
+				System.out.print
+				(a+" ");
+			}	
+		}
+		
+
+	/*	public boolean Search(int a) {
+			// TODO Auto-generated method stub
+			int i = Arrays.binarySearch(arr, a);
+			if(i>0) { return true;}
+			else {return false;}
+		}
+		*/
+		
+		public void push(int arr[],int item,int pos) {
+			arr[pos]=item;
+			for(int a:arr)
+			{
+				System.out.print(a+" ");
+			}
+		}
+		
+		public int pop(int arr[]) {
+			int n=arr.length;
+			return arr[n];
+		}
+		
+	
+		
+		
+
+	
+
+}

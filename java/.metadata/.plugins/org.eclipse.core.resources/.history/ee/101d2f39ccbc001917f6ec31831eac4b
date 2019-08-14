@@ -1,0 +1,29 @@
+package example;
+
+public class MyDate {
+	private int day;
+	private int month;
+	private int year;
+	
+	public boolean setDay (int d) {
+			
+	}
+	public boolean setMonth (int m) {
+		
+	}
+	public boolean setYear (int y) {
+		
+	}
+	
+	
+	public int getDay() {
+		
+	}
+public int getDay() {
+		
+	}
+public int getDay() {
+	
+}
+
+}

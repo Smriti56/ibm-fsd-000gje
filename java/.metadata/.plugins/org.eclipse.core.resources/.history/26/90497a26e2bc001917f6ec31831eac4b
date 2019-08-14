@@ -1,0 +1,19 @@
+package EmployeeDetails;
+
+public class PermanentEmployee extends Employee{
+	private int salary;
+
+	public PermanentEmployee() {
+		super();
+	}
+
+	public PermanentEmployee(int salary) {
+		super();
+		this.salary = salary;
+	}
+	
+	protected String getDetails(){
+		return(getDetails()+"salary :"+salary);
+	}
+
+}

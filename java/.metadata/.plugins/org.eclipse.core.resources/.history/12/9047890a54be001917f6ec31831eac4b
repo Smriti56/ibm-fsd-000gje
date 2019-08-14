@@ -1,0 +1,35 @@
+package example;
+
+public class AccountNotValidException extends Throwable{
+	
+	private static final long serialVersionUID = -7296457842463088207L;
+	//private static final long serialVersionUID = 1L;
+	
+	
+	private String message;
+
+	public AccountNotValidException() {
+		super();
+	}
+
+	public AccountNotValidException(String message) {
+		super();
+		this.message = message;
+	}
+
+	/**
+	 * @return the message
+	 */
+	public String getMessage() {
+		return message;
+	}
+
+	/**
+	 * @param message the message to set
+	 */
+	public void setMessage(String message) {
+		this.message = message;
+	}
+	
+	
+}

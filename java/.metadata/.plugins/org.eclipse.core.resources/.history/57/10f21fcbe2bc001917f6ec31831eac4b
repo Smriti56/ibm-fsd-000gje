@@ -1,0 +1,20 @@
+package EmployeeDetails;
+
+public class Emp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee y1;
+		y1=new PermanentEmployee();
+		y1.getDetails();
+		System.out.println(y1);
+		
+		Employee y2;
+		y2=new ContractEmployee();
+		y2.getDetails();
+		System.out.println(y2);
+		
+				
+
+}
+}

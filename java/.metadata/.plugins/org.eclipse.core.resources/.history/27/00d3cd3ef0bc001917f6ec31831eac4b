@@ -1,0 +1,21 @@
+package prod;
+
+public class Book {
+	private String name;
+	private String author;
+	
+	public Book() {
+		super();
+	}
+
+	public Book(String name, String author) {
+		super(2000);
+		this.name = name;
+		this.author = author;
+	}
+	
+	
+	
+	
+	
+}

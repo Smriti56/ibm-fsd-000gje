@@ -1,0 +1,19 @@
+package example;
+
+import java.util.Scanner;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int age=nextInt();
+
+	}
+
+	private static int nextInt() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

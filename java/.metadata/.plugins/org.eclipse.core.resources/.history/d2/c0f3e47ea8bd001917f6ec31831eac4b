@@ -1,0 +1,38 @@
+package sort;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[]= {
+				100,1,-20,30,0
+		};
+		
+		int min,i,j,k;
+		for(i=0;i<arr.length-1;i++)
+		{
+			min=arr[i];
+			for(j=i+1;j<arr.length;j++)
+			{
+				if(arr[j]<min) 
+				{
+					min=arr[j];
+					k=j;
+				}
+			}
+			
+			arr[i]=arr[k];
+			arr[k]=min;
+			
+		}
+		
+		for(int a:arr) {
+			System.out.print(a+" ");
+		}
+		
+		
+		
+
+	}
+
+}

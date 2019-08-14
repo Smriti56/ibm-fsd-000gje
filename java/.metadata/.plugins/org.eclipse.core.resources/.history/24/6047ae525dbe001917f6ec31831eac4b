@@ -1,0 +1,19 @@
+package name;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str="smriti";
+		char str1[]=str.toCharArray();
+		Name name=new Name();
+		try {
+			name.newName();
+		} catch (NameNotValid e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+			System.out.println(e);
+		}
+	}
+
+}

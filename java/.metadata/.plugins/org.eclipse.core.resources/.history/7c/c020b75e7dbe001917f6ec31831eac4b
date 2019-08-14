@@ -1,0 +1,26 @@
+package name;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String firstName;
+		String lastName;
+		
+		System.out.println("Enter first name");
+		firstName=sc.next();
+		System.out.println("Enter last name");
+		lastName=sc.next();
+		
+		try {
+			name.newName();
+			} catch (AccountAlreadyExist e) {
+			//e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+	}
+
+}
+	
+	
+	

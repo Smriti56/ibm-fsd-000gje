@@ -1,0 +1,19 @@
+package innerClass;
+
+public class OuterClass {
+	private int x;
+	private int y;
+
+	public OuterClass() {
+		super();
+	}
+	
+	public OuterClass(int x) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+	
+	
+
+}

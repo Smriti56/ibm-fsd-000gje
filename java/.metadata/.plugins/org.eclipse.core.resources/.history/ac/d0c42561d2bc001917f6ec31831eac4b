@@ -1,0 +1,17 @@
+package comm.example.client;
+
+import comm.example.myDate;
+
+
+public class Tester {
+
+	public static void main(String[] args) {
+		
+		myDate MyDate=null;
+		MyDate= new myDate();
+		MyDate.createDate(9, 10, 1997);
+		System.out.println(MyDate.getDetails());
+
+	}
+
+}

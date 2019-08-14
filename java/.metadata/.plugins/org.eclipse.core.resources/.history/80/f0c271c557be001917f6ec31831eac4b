@@ -1,0 +1,78 @@
+package name;
+import java.io.Serializable;
+
+public class Name implements Serializable{
+
+	private static final long serialVersionUID = -867406614572692900L;
+	
+	private char[] firstName;
+	private char[] lastName;
+	
+	
+	
+	
+	public Name() {
+		super();
+	}
+	
+
+	
+	public Name(char[] firstName, char[] lastName) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
+
+
+	/**
+	 * @return the firstName
+	 */
+	public char[] getFirstName() {
+		return firstName;
+	}
+
+
+
+	/**
+	 * @param firstName the firstName to set
+	 */
+	public void setFirstName(char[] firstName) {
+		this.firstName = firstName;
+	}
+
+
+
+	/**
+	 * @return the lastName
+	 */
+	public char[] getLastName() {
+		return lastName;
+	}
+
+
+
+	/**
+	 * @param lastName the lastName to set
+	 */
+	public void setLastName(char[] lastName) {
+		this.lastName = lastName;
+	}
+
+
+
+	public Name newName(String fName,String lName) throws NameNotValid{
+		this.firstName=fName;
+		this.lastName=lName;
+		if(fName[0].toUpperCase() == null)
+		{
+			
+		}
+		
+	}
+	
+	
+	
+	
+
+}

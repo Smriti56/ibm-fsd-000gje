@@ -1,0 +1,20 @@
+package name;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Name name=new Name();
+		try {
+			name.newName();
+			} catch (AccountAlreadyExist e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+	}
+
+}
+	
+	
+	
