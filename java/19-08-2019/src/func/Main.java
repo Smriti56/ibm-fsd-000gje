@@ -19,7 +19,7 @@ public class Main {
 		char ans ='y';
 		do
 		{
-			System.out.println("Enter 1 to add, 2 to delete, 3 to update , 4 to delete");
+			System.out.println("Enter 1 to add, 2 to delete, 3 to update , 4 to search");
 			Scanner sc= new Scanner(System.in);
 			n=sc.nextInt();
 			Employee e = new Employee();
@@ -38,12 +38,55 @@ public class Main {
 			{
 				System.out.println("Enter the id you want to delete");
 				id=sc.nextInt();
-				alist=e.deleteEmployee(id,list);
+				try {
+					alist=e.deleteEmployee(id,list);
+				} catch (EmployeeNotFound e1) {
+					// TODO Auto-generated catch block
+					System.out.println(e1.getMsg());
+				}
 				System.out.println(alist);
 				break;
 				
 			}
+			
+			case 3:
+			{
+				System.out.println("Enter the id you want to update");
+				id=sc.nextInt();
+				System.out.println("Enter the salary");
+				sal=sc.nextDouble();
+				try {
+					alist=e.updateEmployee(id,sal,list);
+				} catch (EmployeeNotFound e1) {
+					// TODO Auto-generated catch block
+					System.out.println(e1.getMsg());
+				}
+				System.out.println(alist);
+				break;	
 			}
+			case 4:
+			{
+				Employee emp = new Employee();
+				System.out.println("Enter the id you want to delete");
+				id=sc.nextInt();
+				try {
+					emp=e.searchEmployee(id,list);
+				} catch (EmployeeNotFound e1) {
+					// TODO Auto-generated catch block
+					System.out.println(e1.getMsg());
+				}
+				System.out.println(emp);
+				break;
+				
+			}
+				
+			
+			
+			}
+			
+			System.out.println("Do you want to continue");
+			ans=sc.next().charAt(0);
+			
 		}while(ans=='y');
 		
 		

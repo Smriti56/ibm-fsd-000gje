@@ -88,9 +88,63 @@ public class Employee {
 
 
 
-	public List<Employee> deleteEmployee(int id2, List<Employee> list) {
-		list.remove(id2);
-		return list;
+	public List<Employee> deleteEmployee(int id2, List<Employee> list) 	throws EmployeeNotFound{
+		//Employee obj= new Employee();
+		System.out.println(id2);
+		for(int i=0;i<list.size();i++)
+		{
+			if(list.get(i).id==id2)
+			{
+				list.remove(list.get(i));
+				return list;
+			}	
+		}
+		
+		throw new EmployeeNotFound("Employee not found");
+		
+	}
+
+
+
+
+	public List<Employee> updateEmployee(int id2, double sal, List<Employee> list)  throws EmployeeNotFound{
+		 
+		String name;
+		System.out.println(id2);
+		for(int i=0;i<list.size();i++)
+		{
+			if(list.get(i).id==id2)
+			{
+				name=list.get(i).name;
+				Employee obj= new Employee(id2,name,sal);
+				list.remove(list.get(i));
+				list.add(obj);
+				return list;
+			}	
+		}
+		throw new EmployeeNotFound("Employee not found");
+		
+	}
+
+
+
+
+	public Employee searchEmployee(int id2, List<Employee> list) throws EmployeeNotFound{
+		Employee obj = null;
+		String name;
+		double sal;
+		for(int i=0;i<list.size();i++)
+		{
+			if(list.get(i).id==id2)
+			{
+				name=list.get(i).name;
+				sal=list.get(i).salary;
+				obj= new Employee(id2,name,sal);
+				return obj;
+			}	
+		}
+		throw new EmployeeNotFound("Employee not found");
+		
 	}
 
 }
