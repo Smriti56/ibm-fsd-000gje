@@ -2,7 +2,7 @@ package assessment1;
 
 import java.util.Date;
 
-public class Employee implements Comparable<Object>{
+public class Employee implements Comparable<Employee>{
 	
 	private int id;
 	private String name;
@@ -67,9 +67,8 @@ public class Employee implements Comparable<Object>{
 		return "Employee [name="  + name + ", department=" + department + ", dateOfJoining=" + dateOfJoining + ", age="
 				+ age + ", salary=" + salary + "]";
 	}
-	public int compareTo(Object o) {
+	public int compareTo(Employee emp) {
 		
-		Employee emp=(Employee) o;
 		
 		if(this.salary==emp.getSalary())
 		{

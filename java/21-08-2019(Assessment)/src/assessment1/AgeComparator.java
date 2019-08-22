@@ -3,20 +3,11 @@ package assessment1;
 import java.util.Comparator;
 import java.util.Date;
 
-public class AgeComparator extends Employee implements Comparator<Object>{
+public class AgeComparator implements Comparator<Employee>{
 	
 	
-	
-
-	public AgeComparator(int id, String name, String department, Date dateOfJoining, int age, int salary) {
-		super(id, name, department, dateOfJoining, age, salary);
-		// TODO Auto-generated constructor stub
-	}
-
 	@Override
-	public int compare(Object o1, Object o2) {
-		Employee emp1 =(Employee)o1;
-		Employee emp2 =(Employee)o2;
+	public int compare(Employee emp1, Employee emp2) {
 		
 		if(emp1.getAge()==emp2.getAge())
 		{

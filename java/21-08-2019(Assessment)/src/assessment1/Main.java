@@ -17,7 +17,7 @@ public class Main {
 	{
 		Scanner sc= new Scanner(System.in);
 		
-		Set<Employee> emplist= new TreeSet<Employee>();
+		List<Employee> emplist= new ArrayList<Employee>();
 		
 		System.out.println("Input the no of Employees");
 		int n=sc.nextInt();
@@ -48,20 +48,20 @@ public class Main {
 		switch(ans)
 		{
 		case 1:
-			Object[] obj=emplist.toArray();
-			Employee e =null; 
 			
-			for(Object o:obj)
+			Collections.sort(emplist);
+			for(Employee e:emplist)
 			{
-				e=(Employee)o;
-				
 				EmployeeBO.printEmployee(e);
 			}
 			break;
 		case 2:
 			
-			//AgeComparator comp = (AgeComparator) emplist.iterator(); 
-			
+			Collections.sort(emplist, null);
+			for(Employee e:emplist)
+			{
+				EmployeeBO.printEmployee(e);
+			}
 			break;
 		}
 		
