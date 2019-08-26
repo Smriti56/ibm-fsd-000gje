@@ -1,0 +1,40 @@
+package FileInputOutputStream;
+
+import java.io.*;
+
+public class FileInputOutputStream {
+	public static void main(String args[]) throws IOException
+	{
+	
+	File inputFile=new File("input.txt");
+	File outputFile=new File("output.txt");
+	
+	
+	//using byte stream
+	
+//	FileInputStream in=new FileInputStream(inputFile);
+//	FileOutputStream out = new FileOutputStream(outputFile);
+	
+	
+	
+	//using filereader writer
+	
+	FileReader in=new FileReader(inputFile);
+FileWriter out = new FileWriter(outputFile);
+	
+	
+	
+
+	int c;
+	while((c=in.read())!=-1)
+	{
+		System.out.println((char)c);
+		out.write(c);
+		
+	}
+	
+	in.close();
+	out.close();
+	}
+
+}
