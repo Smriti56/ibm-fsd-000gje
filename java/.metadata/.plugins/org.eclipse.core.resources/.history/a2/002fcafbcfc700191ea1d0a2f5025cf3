@@ -1,0 +1,106 @@
+package JSwingChat;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
+import java.awt.event.ActionEvent;
+
+public class Server extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Server frame = new Server();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Server() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(88, 69, 263, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		JButton btnClickToTrn = new JButton("Click to trn on the chat");
+		btnClickToTrn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				 
+		        // Default port number we are going to use
+		        int portnumber = 1236;
+		      
+		        
+		        // Create a MulticastSocket
+		        MulticastSocket serverMulticastSocket;
+				try {
+					serverMulticastSocket = new MulticastSocket(portnumber);
+					 System.out.println("MulticastSocket is created...");
+				        
+				        // Determine the IP address of a host, given the host name
+				        InetAddress group =
+				                InetAddress.getByName("228.0.0.1");
+				        
+				        // getByName- returns IP address of given host
+				        serverMulticastSocket.joinGroup(group);
+				        System.out.println("joinGroup method is called...");
+				        boolean infinite = true;
+				        // Continually receives data and prints them 
+				        while(infinite) {
+				            byte buf[] = new byte[1024];
+				            DatagramPacket data =
+				                    new DatagramPacket(buf, buf.length);
+				            serverMulticastSocket.receive(data);
+				            String msg =
+				                    new String(data.getData()).trim();
+				            
+				            textField.setText(msg);
+				            System.out.println("Message received from client = " + msg);
+				            //	serverMulticastSocket.close();
+				        }
+				       
+				        
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+				
+			
+				 
+		       
+			}
+		});
+		btnClickToTrn.setBounds(133, 27, 174, 20);
+		contentPane.add(btnClickToTrn);
+	}
+}

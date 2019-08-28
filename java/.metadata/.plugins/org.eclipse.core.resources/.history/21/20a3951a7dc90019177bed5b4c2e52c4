@@ -1,0 +1,73 @@
+package comm.example.filter;
+
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.servlet.DispatcherType;
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
+
+import comm.example.dao.EmployeeDao;
+import comm.example.dao.EmployeeDaoImpl;
+import comm.example.model.Employee;
+
+
+@WebFilter(dispatcherTypes = {
+				DispatcherType.REQUEST, 
+				DispatcherType.FORWARD, 
+				DispatcherType.INCLUDE, 
+				DispatcherType.ERROR
+		}
+					, urlPatterns = { "/list.view" })
+public class View implements Filter {
+
+    
+    public View() {
+        // TODO Auto-generated constructor stub
+    }
+
+	
+	public void destroy() {
+		// TODO Auto-generated method stub
+	}
+
+	
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+		
+		String email=request.getParameter("email");
+		try {
+			EmployeeDao emp= new EmployeeDaoImpl();
+			List<Employee> list=emp.getAllEmployees();
+			
+			for(Employee l:list)
+			{
+				if(l.getEmail()==email) {
+					chain.doFilter(request, response);
+				}
+				else
+				{
+					RequestDispatcher  view=request.getRequestDispatcher("list.view");
+					view.forward(request, response);
+				}
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+	
+	public void init(FilterConfig fConfig) throws ServletException {
+		// TODO Auto-generated method stub
+	}
+
+}

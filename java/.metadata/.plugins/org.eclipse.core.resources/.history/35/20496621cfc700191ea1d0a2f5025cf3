@@ -1,0 +1,107 @@
+package JSwingChat;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.DatagramPacket;
+import java.net.InetAddress;
+import java.net.MulticastSocket;
+import java.awt.event.ActionEvent;
+
+public class Client extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Client frame = new Client();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Client() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(23, 77, 169, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		JButton btnSend = new JButton("Send");
+		btnSend.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+		        
+		        // Default port number we are going to use
+		        int portnumber = 1236;
+		       
+		        
+		        // Create a MulticastSocket
+		        MulticastSocket chatMulticastSocket;
+				try {
+					chatMulticastSocket = new MulticastSocket(portnumber);
+					 // Determine the IP address of a host, given the host name
+			        InetAddress group =
+			                InetAddress.getByName("226.0.0.1");
+			        
+			        // Joins a multicast group
+			        chatMulticastSocket.joinGroup(group);
+			        
+			        // Prompt a user to enter a message
+			        String msg = "";
+			        //System.out.println("Type a message for the server:");
+			        
+			        msg=textField.getText();
+//			        System.out.println(message);
+//			        BufferedReader br =
+//			                new BufferedReader(new InputStreamReader(System.in));
+//			        msg = br.readLine();
+			        System.out.println(msg);
+			       
+			        
+			        // Send the message to Multicast address
+			        DatagramPacket data = new DatagramPacket(msg.getBytes(), 0, msg.length(), group, portnumber);
+			        chatMulticastSocket.send(data);
+			        
+			        // Close the socket
+			        chatMulticastSocket.close();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+		        
+		       
+			}
+		});
+		btnSend.setBounds(262, 76, 89, 23);
+		contentPane.add(btnSend);
+	}
+
+}

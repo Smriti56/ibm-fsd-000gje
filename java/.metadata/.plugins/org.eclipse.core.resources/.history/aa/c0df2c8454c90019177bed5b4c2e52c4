@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Employee</title>
+</head>
+<body>
+<h1>Add New Employee</h1>
+<form name="Details" id="form-1" method="post" action="add.view">
+</form>
+
+<button type="submit" value="Add Employee"></button>
+</body>
+</html>

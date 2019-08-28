@@ -1,0 +1,8 @@
+package comm.example.model;
+
+public class League {
+
+	private String title;
+	private String season;
+	private int year;
+}

@@ -1,0 +1,18 @@
+package swing;
+
+import java.sql.Connection;
+
+import factory.MyConnectionFactory;
+
+public class RS2XMLConfig {
+	private MyConnectionFactory factory;
+	private Connection connection;
+	
+	public class RS2XMLConfig
+	{
+		
+	}
+	
+	
+
+}

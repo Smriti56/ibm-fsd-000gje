@@ -1,0 +1,44 @@
+package assessment3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Country {
+	
+	String name;
+	List<String> stateList=new ArrayList<State>();
+	
+	
+	public Country(String name) {
+		super();
+		this.name = name;
+	}
+	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public List<State> getStateList() {
+		return stateList;
+	}
+	public void setStateList(List<State> stateList) {
+		this.stateList = stateList;
+	}
+	
+	public void addState(String state)
+	{
+		stateList.add(state);
+		
+	}
+	
+	public List getStateList1()
+	{
+		
+		return stateList;
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+package assessment5;
+
+import java.util.TreeMap;
+
+public class LetterSequence {
+	public TreeMap<Character,Integer> computeFrequency(){
+		return null;
+		
+	}
+	
+	public void displayLetterFrequency(TreeMap<Character,Integer> frequencyMap) {
+		
+	}
+	
+	private String sentence;	
+	
+
+}

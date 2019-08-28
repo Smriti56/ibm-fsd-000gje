@@ -1,0 +1,78 @@
+package assessment5;
+
+import java.util.Map.Entry;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class LetterSequence {
+	
+	private String sentence;
+	
+	public LetterSequence(String sentence) {
+		super();
+		this.sentence = sentence;
+	}
+	
+
+	public String getSentence() {
+		return sentence;
+	}
+
+
+	public void setSentence(String sentence) {
+		this.sentence = sentence;
+	}
+
+
+	public TreeMap<Character,Integer> computeFrequency(){
+		String sentence=this.getSentence();
+		for(int i=0;i<sentence.length();i++)
+		{
+			int count=1;
+			char c=sentence.charAt(i);
+			if(c==' ')
+			{
+				
+			}
+			else if(treeMap.containsKey(c))
+			{ 
+				int number=treeMap.get(c);
+				number=number+1;
+				treeMap.put(c,number);
+			}
+			else
+			{
+				treeMap.put(c, count);
+			}	
+			
+		}
+		return null;
+		
+	}
+	
+	public void displayLetterFrequency(SortedMap<Character, Integer> treeMap) {
+		
+		for(Entry<Character, Integer> entry: treeMap.entrySet())
+		{
+			System.out.print(entry.getKey()+" :");
+			int n=entry.getValue();
+			for(int i=0;i<n;i++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+			
+		}
+		
+		
+	}
+
+	
+	
+	
+	
+	
+		
+	
+
+}

@@ -1,0 +1,83 @@
+package swing;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import service.EmployeeService;
+import service.EmployeeServiceImpl;
+
+import javax.swing.JTable;
+import javax.swing.JScrollPane;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.awt.event.ActionEvent;
+
+public class Display extends JFrame {
+	
+	
+	Object config;
+
+	private JPanel contentPane;
+	private JTable table;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Display frame = new Display();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Display() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(46, 44, 358, 195);
+		contentPane.add(scrollPane);
+		
+		table = new JTable();
+		scrollPane.setViewportView(table);
+		
+		JButton btnLoadData = new JButton("Load Data");
+		btnLoadData.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+				
+					ResultSet rs=config.getAllEmployees();
+							
+					
+				} catch (SQLException e1) {
+				
+					e1.printStackTrace();
+				}
+				
+				
+				
+			}
+		});
+		btnLoadData.setBounds(169, 238, 89, 23);
+		contentPane.add(btnLoadData);
+	}
+}

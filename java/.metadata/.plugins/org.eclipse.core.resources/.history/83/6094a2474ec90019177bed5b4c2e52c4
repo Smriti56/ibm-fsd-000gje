@@ -1,0 +1,33 @@
+package comm.example.dao;
+
+import java.util.List;
+
+import comm.example.model.Employee;
+
+public class EmployeeDaoImpl implements EmployeeDao{
+
+	@Override
+	public void createEmployee(Employee employee) {
+		
+		
+	}
+
+	@Override
+	public List<Employee> getAllEmployees() {
+		
+		return null;
+	}
+
+	@Override
+	public void deleteEmployeeById(int id) {
+		
+		
+	}
+
+	@Override
+	public void edit(int id) {
+		
+		
+	}
+
+}

@@ -1,8 +1,0 @@
-package name;
-
-public class Name extends Throwable{
-
-	private static final long serialVersionUID = -867406614572692900L;
-	
-
-}

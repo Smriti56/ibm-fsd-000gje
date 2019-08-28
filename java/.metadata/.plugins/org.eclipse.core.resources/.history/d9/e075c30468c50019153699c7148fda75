@@ -1,0 +1,24 @@
+package unicast;
+
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class NetworkingServer {
+
+	ServerSocket server=null;
+	Socket client;
+	
+	int portnumber=1234;
+	
+	server=new ServerSocket(portnumber);
+	public static void main(String args[]) {
+		
+		
+		while(true)
+		{
+			
+		}
+	}
+	
+	
+}

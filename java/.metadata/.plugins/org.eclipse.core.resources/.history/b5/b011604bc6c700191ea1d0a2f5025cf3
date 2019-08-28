@@ -1,0 +1,18 @@
+package unitTesting;
+
+import junit.framework.TestSuite;
+
+public class TestSuite {
+	
+
+public static TestSuite createTestSuite()
+{
+	TestSuite testSuite=new TestSuite("Alltest");
+	testSuite.addTest(new TestCalculator("testCheck"));
+	testSuite.addTest(new TestCalculator("testAddMethod"));
+	//testSuite.addTest(new TestCalculator("testSubMethod"));
+	return testSuite;
+}
+	
+
+}

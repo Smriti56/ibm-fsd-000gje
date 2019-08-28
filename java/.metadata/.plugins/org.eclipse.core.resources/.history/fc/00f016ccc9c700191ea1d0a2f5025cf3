@@ -1,0 +1,15 @@
+package chat;
+
+import java.net.MulticastSocket;
+
+public class MulticastChatServer {
+
+	public static void main(String[] args) throws Exception{
+		int portnumber=1236;
+		
+		//create multisocket
+		MulticastSocket serverMulticastSocket=new MulticastSocket();
+		System.out.println("MulticastSocket is created");
+		
+	}
+}

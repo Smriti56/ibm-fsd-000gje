@@ -1,0 +1,8 @@
+package comm.example.filter;
+
+public class Snippet {
+	public static void main(String[] args) {
+		serv.deleteEmployeeById(id);
+	}
+}
+

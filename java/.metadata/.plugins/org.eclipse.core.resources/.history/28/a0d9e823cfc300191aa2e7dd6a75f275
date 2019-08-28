@@ -1,0 +1,11 @@
+package assessment1;
+
+import java.util.Date;
+
+public class EmployeeBO {
+
+	public static void printEmployee(int id,String name, String department, Date dateOfJoining, int age, int salary)
+	{
+		System.out.printf("15s %-30s %-30s %-10s %-10s\\n",id,name,department,dateOfJoining,age,salary);
+	}
+}

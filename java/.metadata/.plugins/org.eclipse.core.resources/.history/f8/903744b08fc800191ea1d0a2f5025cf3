@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form  id="form-1" action="add_league.do" method="post">
+		<label for="input-1">LeagueTitle:</label>
+		<input id="input-1" name="title" required="true" type="text"/>
+		<label for="input-2">Year:</label>
+		<input id="input-2" name="year" required="true" type="text"/>
+		<select name="season">
+		<option value="Summer">Summer</option>
+		<option value="Winter">Summer</option>
+		<option value="Autumn">Summer</option>
+		<option value="Spring">Summer</option>
+		</select>
+		
+	</form>
+</body>
+</html>

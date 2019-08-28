@@ -1,0 +1,68 @@
+package SwingNetwork;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.net.Socket;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+import javax.swing.JTextPane;
+
+public class Client extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		
+		Socket client = null;
+        int portnumber = 1234;
+        
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Client frame = new Client();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Client() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblEnterNumber = new JLabel("Enter Number");
+		lblEnterNumber.setBounds(42, 69, 112, 24);
+		contentPane.add(lblEnterNumber);
+		
+		textField = new JTextField();
+		textField.setBounds(158, 71, 86, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
+		
+		JButton btnCalculate = new JButton("Calculate");
+		btnCalculate.setBounds(295, 70, 89, 23);
+		contentPane.add(btnCalculate);
+		
+		JTextPane textPane = new JTextPane();
+		textPane.setBounds(101, 126, 206, 76);
+		contentPane.add(textPane);
+	}
+}

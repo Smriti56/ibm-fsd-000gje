@@ -1,8 +1,0 @@
-package enumeration;
-
-public class TennisCoach {
-	private String name;
-	private Level level;
-	
-
-}

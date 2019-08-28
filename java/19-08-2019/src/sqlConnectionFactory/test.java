@@ -49,12 +49,16 @@ public static void main(String[] args) throws SQLException {
 	PreparedStatement stmt=connection.prepareStatement("delete from EIBM where Eid=?");  
 	System.out.println("Enter the eid you want to delete");
 	int eId= scanner.nextInt();
-	
-	stmt.setInt(1,eId);  
-	  
+	stmt.setInt(1,eId);    
 	int i=stmt.executeUpdate();  
 	System.out.println(i+" records deleted"); 
 	
-
+	//to search
+	PreparedStatement st=connection.prepareStatement("Select * from EIBM where eid=?");
+	System.out.println("Enter the id you want to search");
+	int id=scanner.nextInt();
+	st.setInt(2,id);
+	int in=st.executeUpdate();
+	System.out.println(in+"updated");
 }
 }

@@ -1,0 +1,13 @@
+package FileInputOutputStream;
+
+import java.io.*;
+
+public class CopyByFileReaderWriter {
+public static void main(String args[]) {
+	
+	File inputFile=new File("input.txt");
+	File outputFile =new File("output.txt");
+	
+	
+}
+}

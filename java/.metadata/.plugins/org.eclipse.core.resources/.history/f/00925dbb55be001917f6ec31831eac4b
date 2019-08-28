@@ -1,8 +1,0 @@
-package name;
-
-public class NameNotValid extends Throwable{
-	private string message;
-	
-	
-
-}

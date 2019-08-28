@@ -1,0 +1,57 @@
+package comm.example.model;
+
+public class Employee {
+
+	private String name;
+	private String email;
+	private String passsword;
+	private String country;
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+	/**
+	 * @return the email
+	 */
+	public String getEmail() {
+		return email;
+	}
+	/**
+	 * @param email the email to set
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	/**
+	 * @return the passsword
+	 */
+	public String getPasssword() {
+		return passsword;
+	}
+	/**
+	 * @param passsword the passsword to set
+	 */
+	public void setPasssword(String passsword) {
+		this.passsword = passsword;
+	}
+	/**
+	 * @return the country
+	 */
+	public String getCountry() {
+		return country;
+	}
+	
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	
+	
+}

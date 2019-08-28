@@ -1,0 +1,10 @@
+package serializable;
+
+import java.io.Serializable;
+
+public class Employee implements Serializable {
+
+	private static final long serialVersionUID = -9010357829331880115L;
+	
+
+}

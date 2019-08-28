@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/annotations-api.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/catalina-storeconfig.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/jaspic-api.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/servlet-api.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-i18n-es.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-i18n-ru.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-util-scan.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/ecj-4.6.3.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-i18n-fr.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-api.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/catalina-ant.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/jasper-el.jar"/>
+  <path value="E:/eclipse-workspace/27-08-2019WebSoccer/WebContent/WEB-INF/lib/commons-pool2-2.7.0.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/catalina-ha.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/jasper.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-coyote.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-websocket.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-jdbc.jar"/>
+  <path value="E:/eclipse-workspace/27-08-2019WebSoccer/WebContent/WEB-INF/lib/commons-dbcp2-2.7.0.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-util.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-dbcp.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-jni.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/jsp-api.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/websocket-api.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/catalina.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/el-api.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/catalina-tribes.jar"/>
+  <path value="E:/eclipse-workspace/27-08-2019WebSoccer/WebContent/WEB-INF/lib/mysql-connector-java-8.0.17.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core"/>
+  <el>
+   <linked-el length="29" name="%0" offset="138" path="%1"/>
+   <linked-el length="29" name="%2" offset="138" path="%1"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="catalina.base" value="%0"/>
+  <alias path="/27-08-2019WebSoccer/WebContent/META-INF/context.xml" value="%1"/>
+  <alias path="catalina" value="%2"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>

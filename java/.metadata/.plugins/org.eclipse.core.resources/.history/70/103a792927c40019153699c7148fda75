@@ -1,0 +1,54 @@
+package assessment5;
+
+import java.util.Map.Entry;
+import java.util.TreeMap;
+
+public class LetterSequence implements Comparable {
+	
+	private String sentence;
+	
+	public LetterSequence(String sentence) {
+		super();
+		this.sentence = sentence;
+	}
+
+	public TreeMap<Character,Integer> computeFrequency(){
+		return null;
+		
+	}
+	
+	public void displayLetterFrequency(TreeMap<Character,Integer> frequencyMap) {
+		
+		
+//		for (Map.Entry<String, String> entry : map.entrySet()) {
+//		    System.out.println(entry.getKey() + "/" + entry.getValue());
+//		}
+		
+		for(Entry<Character, Integer> entry: frequencyMap.entrySet())
+		{
+			System.out.print(entry.getKey()+" :");
+			int n=entry.getValue();
+			for(int i=0;i<n;i++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+			
+		}
+		
+		
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+	
+	
+		
+	
+
+}

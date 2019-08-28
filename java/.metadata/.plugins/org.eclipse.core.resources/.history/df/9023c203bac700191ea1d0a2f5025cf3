@@ -1,0 +1,36 @@
+package unitTesting;
+
+public class Calculator {
+	private int x;
+	private int y;
+	private int result;
+	
+	public Calculator() {
+		super();
+	}
+
+		super();
+		this.x = x;
+		this.y = y;
+	}
+	
+	public int addMethod(int x,int y)
+	{
+		result=x+y;
+		return result;
+	}
+	
+	
+	public int subMethod()
+	{
+		return x-y;
+	}
+	
+	private int check()
+	{
+		return x>y?1:-1;
+	}
+	
+	
+
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="register.view" method="post">
+Name:<input type="text" id="name" placeholder="name"><br/>
+TeamName:<input type="text" id="tname" placeholder="Teamname"><br/>
+LeadName:<input type="text" id="lname" placeholder="Leadname"><br/>
+Sports:<input type="text" id="sports" placeholder="sports">
+
+</form>
+</body>
+</html>

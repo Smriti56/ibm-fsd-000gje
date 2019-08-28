@@ -1,0 +1,29 @@
+package assessment3;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class Main {
+
+	public static void main(String args[])
+	{
+		SortedMap<Country> list= new TreeMap<Country>();
+		List<State> states =new ArrayList<State>();
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Sample input/output");
+		int n= sc.nextInt();
+		System.out.println(n);
+		for(int i=0;i<n;i++)
+		{
+			String names=sc.nextLine();
+			String name[]=names.split("|");
+			for(String c:name) {
+				System.out.println(c);
+			}
+		}
+}
+}

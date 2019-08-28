@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Employee</title>
+</head>
+<body>
+<h1>Add New Employee</h1>
+<form name="Details" id="form-1" method="post">
+
+<label for="input-1">LeagueTitle:</label>
+		<input id="input-1" name="title" required="true" type="text"/><br/>
+		<label for="input-2">Year:</label>
+		<input id="input-2" name="year" required="true" type="text"/><br/>
+		<label for="input-3">Season:</label>
+		<select name="season">
+		<option value="unknown">Seasons</option>
+		<option value="Summer">Summer</option>
+		<option value="Winter">Winter</option>
+		<option value="Autumn">Autumn</option>
+		<option value="Spring">Spring</option>
+		</select><br/>
+		<input type="submit" value="Add" id="button-1"/>
+
+</form>
+
+</body>
+</html>

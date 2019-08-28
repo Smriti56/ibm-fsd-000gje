@@ -1,0 +1,47 @@
+package assessment2;
+
+import java.util.regex.Pattern;
+
+public class UserMainCode {
+	
+	public static boolean checkPassword(String password){
+		
+		if(password.length()<=8)
+		{
+			return false;
+		}
+		else 
+		{
+			boolean hasUppercase = !password.equals(password.toLowerCase());
+			boolean hasLowercase = !password.equals(password.toUpperCase());
+			Pattern p = Pattern.compile("[^a-z0-9 ]");
+			boolean hasSpecialChar;
+			String specialCharacters=" !#$%&'()*+,-./:;<=>?@[]^_`{|}";
+			for (int i = 0; i < password.length(); i++) {
+			    
+			    if (specialCharacters.contains(Character.toString(password.charAt(i))))
+			    {
+			       hasSpecialChar=true;  
+			    } 
+			    else
+			    {
+			    	hasSpecialChar=false;  
+			    }
+			    	
+			}
+			
+			if(hasUppercase && hasLowercase && hasSpecialChar)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+			
+		}
+		
+		
+	}
+
+}

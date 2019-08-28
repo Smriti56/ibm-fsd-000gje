@@ -1,0 +1,12 @@
+package assessment3;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Country {
+	
+	String name;
+	List<State> stateList=new ArrayList<State>();
+	
+
+}

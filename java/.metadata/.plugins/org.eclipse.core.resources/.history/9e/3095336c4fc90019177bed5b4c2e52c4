@@ -1,0 +1,42 @@
+package comm.example.service;
+
+import java.util.List;
+
+import comm.example.model.Employee;
+import dao.EmployeeDaoImpl;
+import comm.example.dao.EmployeeDao;
+
+public class EmployeeServiceImpl implements EmployeeService{
+	
+	private EmployeeDao dao = null;
+	
+
+	public EmployeeServiceImpl(EmployeeDao dao) {
+		super();
+		dao = new EmployeeDaoImpl();
+	}
+
+	@Override
+	public void createEmployee(Employee employee) {
+		dao.createEmployee(employee);
+	}
+
+	@Override
+	public List<Employee> getAllEmployees() {
+		
+		return null;
+	}
+
+	@Override
+	public void deleteEmployeeById(int id) {
+		
+		
+	}
+
+	@Override
+	public void edit(int id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

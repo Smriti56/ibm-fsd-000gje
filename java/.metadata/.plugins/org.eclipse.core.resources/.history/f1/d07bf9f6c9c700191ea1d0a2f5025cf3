@@ -1,0 +1,40 @@
+package chat;
+
+import java.net.InetAddress;
+import java.net.MulticastSocket;
+
+public class MulticastChatServer {
+
+	public static void main(String[] args) throws Exception{
+		int portnumber=1236;
+		
+		//create multisocket
+		MulticastSocket serverMulticastSocket=new MulticastSocket();
+		System.out.println("MulticastSocket is created");
+		
+		//IP address of host, given the host name
+		InetAddress group= InetAddress.getByName("224..0.0.1");
+		
+
+        // getByName- returns IP address of given host
+        serverMulticastSocket.joinGroup(group);
+        System.out.println("joinGroup method is called...");
+        boolean infinite = true;
+        
+        // Continually receives data and prints them 
+        while(infinite) {
+            byte buf[] = new byte[1024];
+            DatagramPacket data =
+                    new DatagramPacket(buf, buf.length);
+            serverMulticastSocket.receive(data);
+            String msg =
+                    new String(data.getData()).trim();
+            System.out.println("Message received from client = " + msg);
+        }
+        serverMulticastSocket.close();
+		
+		
+		
+		
+	}
+}

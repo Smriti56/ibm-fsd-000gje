@@ -11,27 +11,30 @@ public class Shuffle {
 		int noOfHands;
 		int noOfCardsPerHand;
 		
+		System.out.println("Enter no of hands");
+		Scanner sc= new Scanner(System.in);
+		noOfHands=sc.nextInt();
+		System.out.println("Enter no of cards per hand");
+		noOfCardsPerHand=sc.nextInt();
+		
+		List<Card> deck= new ArrayList<Card>();
+		
+		
+		
+		for(Suit s:Suit.values())
+		{
+			for(Rank r:Rank.values())
+			{
+				deck.add(new Card(s,r));
+		}
+		}
 		
 		char ans;
 		do
-		{
-			System.out.println("Enter no of hands");
-			Scanner sc= new Scanner(System.in);
-			noOfHands=sc.nextInt();
-			System.out.println("Enter no of cards per hand");
-			noOfCardsPerHand=sc.nextInt();
+		{		
+			Collections.shuffle(deck);
 			
 			
-			List<String> rank= new ArrayList<String>();
-			List<String> suit= new ArrayList<String>();
-			Collections.addAll(rank, "deuce","three","four","five","six","seven","eight","nine","jack","queen","king");
-			Collections.addAll(suit,"spade","ace","club","diamond");
-			
-			
-			List<Card> deck= new ArrayList<Card>();
-			
-			
-		
 			System.out.println("Distribute again");
 			ans=sc.next().charAt(0);
 				

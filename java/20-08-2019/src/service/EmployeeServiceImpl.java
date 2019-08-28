@@ -37,7 +37,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
 	@Override
 	public void deleteEmployeeById(int id) {
-		// TODO Auto-generated method stub
+		
 		dao.deleteEmployeeById(id);
 		
 	}

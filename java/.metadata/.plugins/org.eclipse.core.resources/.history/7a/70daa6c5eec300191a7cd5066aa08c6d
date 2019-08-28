@@ -1,0 +1,29 @@
+package assessment2;
+
+public class UserMainCode {
+	
+	public static boolean checkPassword(String password){
+		
+		if(password.length()<=8)
+		{
+			return false;
+		}
+		else
+		{
+			 for (int i=1; i<password.length(); i++)
+             {
+                 char ch = password.charAt(i);
+
+                 if (!Character.isLowerCase(ch))
+                 {  
+                     System.out.println("Invalid password");
+                     password = "";
+                 }
+             }
+			return true;
+		}
+		
+		
+	}
+
+}

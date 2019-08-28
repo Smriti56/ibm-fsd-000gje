@@ -1,0 +1,70 @@
+package unitTesting;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import junit.framework.TestCase;
+import junit.textui.TestRunner;
+
+public class TestCalculator extends TestCase{
+	
+	
+
+//	public TestCalculator(String name) {
+//		super(name);
+//	}
+
+
+	int x;
+	int y;
+	
+	
+	@Override
+	protected void setUp() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Initialise the values");
+		x=10;
+		y=20;
+		super.setUp();
+	}
+
+
+
+	@Override
+	protected void tearDown() throws Exception {
+		// TODO Auto-generated method stub
+		System.out.println("Clear the values");
+		super.tearDown();
+	}
+	@Test
+	public void testAddMethod() {
+		Calculator c=new Calculator();
+		int result=c.addMethod(x,y);
+		assertEquals(30,result);
+		
+		//fail("Not yet implemented");
+	}
+	
+	public void addSubMethod()
+	{
+		System.out.println("running");
+		Calculator c=new Calculator();
+		assertEquals(10,c.subMethod(x,y));
+	}
+	
+	public void testCheck()
+	{
+		System.out.println("check");
+		Calculator ca=new Calculator();
+		int result=ca.checkNumber();
+		assertEquals(-1,result);
+		
+	}
+
+
+	public static void main(String[] args) {
+		//junit.textui.TestRunner(Calculator.class);
+	}
+
+}

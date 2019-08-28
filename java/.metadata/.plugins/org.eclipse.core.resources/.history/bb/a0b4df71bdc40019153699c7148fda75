@@ -1,0 +1,13 @@
+package serializable;
+
+import java.io.*;
+
+public class ObjectInputOutputStream {
+public static void main(String[] args) {
+	Employee employee = new Employee("10","Sachin",20000,"mumbai");
+	System.out.println("Employee to write is :"+employee);
+	
+	FileOutputstream out = new FileOutputStream("employee.out");
+	
+}
+}

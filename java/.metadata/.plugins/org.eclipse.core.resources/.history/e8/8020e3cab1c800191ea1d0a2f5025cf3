@@ -1,0 +1,21 @@
+package comm.example.factory;
+
+import java.sql.Connection;
+
+public class MyConnectionFactory {
+	
+	private static javax.sql.DataSource datasource =  null;
+	private static Connection connection=null;
+	
+	public static Connection getMySqlConnectionForHR()
+	{
+		Context initContext=new InitialContext();
+		Object o =initContext
+		
+		
+	}
+	
+	
+	
+
+}

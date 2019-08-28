@@ -1,0 +1,27 @@
+import java.io.*;
+
+import service.EmployeeServiceImpl;
+
+
+public class Main {
+
+	public static void main(String args[]) throws IOException
+		{
+		BufferedReader reader = new BufferedReader(new FileReader("Employee.txt"));
+		String line=reader.readLine();
+		
+		while(line!=null)
+		{
+			//System.out.println(line);
+			EmployeeServiceImpl emp;
+			String[] data=line.split(" ");
+			int id=Integer.parseInt(data[0]);
+			
+			Str
+			
+			line=reader.readLine();
+		}
+		
+		}
+	
+}

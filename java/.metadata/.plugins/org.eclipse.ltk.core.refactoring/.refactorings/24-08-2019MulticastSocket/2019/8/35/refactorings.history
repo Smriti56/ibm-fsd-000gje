@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;MulticastChatServer.java&apos; to &apos;24-08-2019MulticastSocket/src/chat&apos;&#x0D;&#x0A;- Original project: &apos;24-08-2019MulticastSocket&apos;&#x0D;&#x0A;- Destination element: &apos;24-08-2019MulticastSocket/src/chat&apos;&#x0D;&#x0A;- Original element: &apos;MulticastChatServer.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;chat" element1="/src&lt;{MulticastChatServer.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1566799820557" units="1" version="1.0"/>
+</session>

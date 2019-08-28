@@ -1,0 +1,5 @@
+package comm.example.dao;
+
+public class EmployeeDaoImpl {
+
+}

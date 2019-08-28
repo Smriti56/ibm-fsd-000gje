@@ -1,0 +1,23 @@
+package assessment1;
+
+public class AgeComparator implements Comparable<Employee>{
+	
+	@Override
+	public int compareTo(Employee emp) {
+		if(age==emp.age)
+		{
+			return 0;
+		}
+		else if(age<emp.age)
+		{
+			return -1;
+		}
+		else
+		{
+			return 1;
+		}
+		return 0;
+	}
+	
+
+}

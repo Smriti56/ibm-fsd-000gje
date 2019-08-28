@@ -1,0 +1,9 @@
+package assessment3;
+
+public class Country {
+	
+	String name;
+	List<State> stateList=new ArrayList<State>();
+	
+
+}

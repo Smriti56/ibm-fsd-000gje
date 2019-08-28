@@ -1,0 +1,34 @@
+package assessment3;
+
+import java.util.List;
+import java.util.Scanner;
+import java.util.SortedMap;
+import java.util.TreeMap;
+
+public class Main {
+
+	public static void main(String args[])
+	{
+		SortedMap<Country,List<State> state> list= new TreeMap<Country,List<State>>();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Sample input/output");
+		int n= sc.nextInt();
+		
+		for(int i=0;i<n;i++)
+		{
+			String names=sc.next();
+			String name[]=names.split("|");
+			String country=name[0];
+			if(list.containsKey(country))
+			{
+				list.
+			}
+			else
+			{
+				list.
+			}
+			
+			
+		}
+}
+}

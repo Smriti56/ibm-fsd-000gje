@@ -1,0 +1,6 @@
+package snippet;
+
+public class Snippet {
+	EmployeeService service=new EmployeeServiceImpl();
+}
+

@@ -1,0 +1,5 @@
+package comm.example.factory;
+
+public class MyConnectionFactory {
+
+}

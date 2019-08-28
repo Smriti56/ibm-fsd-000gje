@@ -1,0 +1,31 @@
+import java.io.*;
+
+import model.Employee;
+import service.EmployeeServiceImpl;
+
+
+public class Main {
+
+	public static void main(String args[]) throws IOException
+		{
+		BufferedReader reader = new BufferedReader(new FileReader("Employee.txt"));
+		String line=reader.readLine();
+		
+		while(line!=null)
+		{
+			//System.out.println(line);
+			EmployeeService emp = null;
+			String[] data=line.split(" ");
+			int id=Integer.parseInt(data[0]);
+			String fname=data[1];
+			String lname=data[2];
+			String email=data[3];
+
+			emp.createEmployee(new Employee(id,fname,lname,email));
+			
+			line=reader.readLine();
+		}
+		
+		}
+	
+}

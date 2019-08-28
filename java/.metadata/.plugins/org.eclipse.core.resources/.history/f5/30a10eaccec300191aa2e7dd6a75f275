@@ -1,0 +1,40 @@
+package assessment1;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+
+	public static void main(String args[])
+	{
+		Scanner sc= new Scanner(System.in);
+		
+		List<Employee> emplist= new ArrayList<Employee>();
+		
+		System.out.println("Input the no of Employees");
+		int n=sc.nextInt();
+		
+		for(int i=1;i<=n;i++)
+		{
+			System.out.println("Enter the details for Employee"+i);
+			String name=sc.next();
+			String dept=sc.next();
+			String dt=sc.next();
+			Date date = null;
+			try {
+				date = new SimpleDateFormat("dd/MM/yyyy").parse(dt);
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+			int age=sc.nextInt();
+			int sal=sc.nextInt();
+			new Employee(name, dept,date, age, sal);
+			
+		}
+	}
+}

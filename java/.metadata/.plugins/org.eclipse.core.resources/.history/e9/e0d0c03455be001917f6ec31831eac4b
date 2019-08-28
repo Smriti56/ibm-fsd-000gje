@@ -1,6 +1,0 @@
-package name;
-
-public class Name extends Throwable{
-	
-
-}
