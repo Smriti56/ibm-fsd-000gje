@@ -1,0 +1,60 @@
+package comm.example.view;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import comm.example.factory.MyConnectionFactory;
+
+
+
+@WebServlet("/list_leagues.view")
+public class ListLeagues extends HttpServlet {
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try {
+			doProcess(request, response);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try {
+			doProcess(request, response);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	
+	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+		ResultSet resultSet=null;
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		Connection connection = MyConnectionFactory.getMySqlConnectionForHR();
+		PreparedStatement ps = connection.prepareStatement("select * from league");
+		resultSet = ps.executeQuery();
+		out.println("<table><tr><th>Name</th><th>Email</th><th>Password</th><th>Country</th></tr>");
+		while(resultSet.next())
+		{
+			out.println("<tr><td>"+resultSet.getString(2)+"</td><td>"+resultSet.getString(3)+"</td><td>"+resultSet.getInt(4)+"</td>"
+					+ "<td><a href=\"list_leagues.view\"><button type='button'>DELETE<button></td></tr>");
+		}
+		
+			
+	}
+
+}
