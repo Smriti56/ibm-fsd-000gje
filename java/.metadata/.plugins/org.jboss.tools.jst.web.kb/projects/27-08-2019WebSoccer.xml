@@ -18,6 +18,70 @@
   <path value="E:/eclipse-workspace/27-08-2019WebSoccer/WebContent/WEB-INF/lib/commons-pool2-2.7.0.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/catalina-ha.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/jasper.jar"/>
+  <path value="E:/eclipse-workspace/27-08-2019WebSoccer/WebContent/WEB-INF/lib/standard.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/c-1_0-rt.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/c-1_0.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/c.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/fmt-1_0-rt.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/fmt-1_0.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/fmt.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/fn.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/permittedtaglibs.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/scriptfree.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/sql-1_0-rt.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/sql-1_0.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/sql.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/x-1_0-rt.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/x-1_0.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/x.tld" project="27-08-2019WebSoccer"/>
+    </library>
+   </libraries>
+  </path>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-coyote.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-websocket.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-i18n-ja.jar"/>
@@ -26,6 +90,70 @@
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-util.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-dbcp.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-jni.jar"/>
+  <path value="E:/eclipse-workspace/27-08-2019WebSoccer/WebContent/WEB-INF/lib/jstl-1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0-rt.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0-rt.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fn.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/permittedtaglibs.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/scriptfree.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0-rt.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0-rt.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0.tld" project="27-08-2019WebSoccer"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x.tld" project="27-08-2019WebSoccer"/>
+    </library>
+   </libraries>
+  </path>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/jsp-api.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/websocket-api.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/catalina.jar"/>
@@ -38,14 +166,29 @@
   <core validator-id="jboss.cdi.core"/>
   <el>
    <linked-el length="29" name="%0" offset="138" path="%1"/>
-   <linked-el length="29" name="%2" offset="138" path="%1"/>
+   <linked-el length="18" name="%2" offset="301" path="%3"/>
+   <linked-el length="5" name="%4" offset="258" path="%3"/>
+   <linked-el length="29" name="%5" offset="138" path="%1"/>
+   <linked-el length="16" name="%6" offset="199" path="%3"/>
+   <linked-el length="10" name="%6" offset="245" path="%3"/>
   </el>
  </validation>
  <aliases>
   <alias path="catalina.base" value="%0"/>
   <alias path="/27-08-2019WebSoccer/WebContent/META-INF/context.xml" value="%1"/>
-  <alias path="catalina" value="%2"/>
+  <alias path="SUCCESS" value="%2"/>
+  <alias path="/27-08-2019WebSoccer/WebContent/AddLeague.jsp" value="%3"/>
+  <alias path="e" value="%4"/>
+  <alias path="catalina" value="%5"/>
+  <alias path="ERROR" value="%6"/>
  </aliases>
  <includes/>
- <uris/>
+ <uris>
+  <uri value="http://java.sun.com/jsp/jstl/functions">
+   <prefix>fn</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsp/jstl/core">
+   <prefix>c</prefix>
+  </uri>
+ </uris>
 </kb-project>

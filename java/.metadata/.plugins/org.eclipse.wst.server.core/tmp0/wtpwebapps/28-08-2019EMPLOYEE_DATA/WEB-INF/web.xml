@@ -9,6 +9,6 @@
   </resource-ref>
   
   <welcome-file-list>
-    <welcome-file>AddEmployee.java</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
 </web-app>

@@ -8,19 +8,277 @@
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/jaspic-api.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/servlet-api.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-i18n-es.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/standard.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/c-1_0-rt.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/c-1_0.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/c.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/fmt-1_0-rt.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/fmt-1_0.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/fmt.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/fn.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/permittedtaglibs.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/scriptfree.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/sql-1_0-rt.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/sql-1_0.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/sql.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/x-1_0-rt.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/x-1_0.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar/meta-inf/x.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+   </libraries>
+  </path>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-i18n-ru.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-util-scan.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/ecj-4.6.3.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-i18n-fr.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-api.jar"/>
+  <path value="E:/eclipse-workspace/28-08-2019EMPLOYEE_DATA/WebContent/WEB-INF/lib/jstl-1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/c-1_0-rt.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/c-1_0.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/c.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/fmt-1_0-rt.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/fmt-1_0.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/fmt.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/fn.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/permittedtaglibs.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/scriptfree.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/sql-1_0-rt.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/sql-1_0.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/sql.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/x-1_0-rt.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/x-1_0.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar-1/meta-inf/x.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+   </libraries>
+  </path>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/catalina-ant.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/jasper-el.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/catalina-ha.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/jasper.jar"/>
+  <path value="C:/Users/B4ibmjava17/Downloads/jstl-1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0-rt.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c-1_0.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/c.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0-rt.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt-1_0.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fmt.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/fn.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/permittedtaglibs.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/scriptfree.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0-rt.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql-1_0.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/sql.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0-rt.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x-1_0.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jstl-1.2.jar/meta-inf/x.tld" project="29-08-2019JSP_DEMO"/>
+    </library>
+   </libraries>
+  </path>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-coyote.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-websocket.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-i18n-ja.jar"/>
+  <path value="E:/eclipse-workspace/28-08-2019EMPLOYEE_DATA/WebContent/WEB-INF/lib/mysql-connector-java-8.0.17.jar"/>
+  <path value="E:/eclipse-workspace/28-08-2019EMPLOYEE_DATA/WebContent/WEB-INF/lib/commons-pool2-2.7.0.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-jdbc.jar"/>
+  <path value="E:/eclipse-workspace/28-08-2019EMPLOYEE_DATA/WebContent/WEB-INF/lib/standard.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/c-1_0-rt.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/c-1_0.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/c.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/fmt-1_0-rt.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/fmt-1_0.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/fmt.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/fn.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/permittedtaglibs.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/scriptfree.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/sql-1_0-rt.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/sql-1_0.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/sql.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/x-1_0-rt.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/x-1_0.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard.jar-1/meta-inf/x.tld" project="28-08-2019EMPLOYEE_DATA"/>
+    </library>
+   </libraries>
+  </path>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-util.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-dbcp.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/tomcat-jni.jar"/>
@@ -28,6 +286,7 @@
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/websocket-api.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/catalina.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/el-api.jar"/>
+  <path value="E:/eclipse-workspace/28-08-2019EMPLOYEE_DATA/WebContent/WEB-INF/lib/commons-dbcp2-2.7.0.jar"/>
   <path value="C:/Users/B4ibmjava17/Downloads/apache-tomcat-8.5.45/lib/catalina-tribes.jar"/>
  </paths>
  <validation>
@@ -35,14 +294,29 @@
   <core validator-id="jboss.cdi.core"/>
   <el>
    <linked-el length="29" name="%0" offset="138" path="%1"/>
-   <linked-el length="29" name="%2" offset="138" path="%1"/>
+   <linked-el length="30" name="%2" offset="1622" path="%3"/>
+   <linked-el length="32" name="%2" offset="1177" path="%3"/>
+   <linked-el length="29" name="%4" offset="138" path="%1"/>
+   <linked-el length="30" name="%5" offset="1622" path="%3"/>
+   <linked-el length="32" name="%5" offset="1177" path="%3"/>
   </el>
  </validation>
  <aliases>
   <alias path="catalina.base" value="%0"/>
   <alias path="/28-08-2019EMPLOYEE_DATA/WebContent/META-INF/context.xml" value="%1"/>
-  <alias path="catalina" value="%2"/>
+  <alias path="flag" value="%2"/>
+  <alias path="catalina" value="%4"/>
+  <alias path="fn" value="%5"/>
+  <alias path="/28-08-2019EMPLOYEE_DATA/WebContent/response.jsp" value="%3"/>
  </aliases>
  <includes/>
- <uris/>
+ <uris>
+  <uri value="http://java.sun.com/jsp/jstl/functions">
+   <prefix>c</prefix>
+   <prefix>fn</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsp/jstl/core">
+   <prefix>c</prefix>
+  </uri>
+ </uris>
 </kb-project>

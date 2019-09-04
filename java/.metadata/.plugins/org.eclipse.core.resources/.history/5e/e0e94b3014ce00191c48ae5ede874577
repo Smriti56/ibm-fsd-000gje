@@ -1,0 +1,17 @@
+package com.mycompany.javaee_hibernate.model;
+
+import javax.persistence.*;
+
+import lombok.*;
+
+@Entity
+@Data
+
+public class Instructor {
+	private int id;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private id details;
+
+}

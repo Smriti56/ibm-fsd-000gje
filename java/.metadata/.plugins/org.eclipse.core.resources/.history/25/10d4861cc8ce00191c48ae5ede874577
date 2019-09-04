@@ -1,0 +1,14 @@
+package oneToOneBidirectional.entity;
+
+
+
+@Entity
+@Table(name=instructor)
+public class InstructorDetails {
+	
+	private int id;
+	private String firstname;
+	private String lastname;
+	private String email;
+
+}

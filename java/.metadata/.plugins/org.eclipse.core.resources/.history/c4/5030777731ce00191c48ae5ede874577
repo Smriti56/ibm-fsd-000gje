@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+Title:<input type="text" name="title"><br/>
+Artist:<input type="text" name="title"><br/>
+Cost:<input type="text" name="title"><br/>
+PurchaseDate:<input type="text" name="title"><br/>
+</form>
+
+</body>
+</html>

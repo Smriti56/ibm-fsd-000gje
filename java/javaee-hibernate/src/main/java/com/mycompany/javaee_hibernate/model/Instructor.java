@@ -1,0 +1,34 @@
+package com.mycompany.javaee_hibernate.model;
+
+import javax.persistence.*;
+
+import lombok.*;
+
+@Entity
+@Table(name="instructor")
+@Data
+@NoArgsConstructor
+public class Instructor {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
+	private int id;
+	@Column(name="firstname")
+	private String firstName;
+	@Column(name="lastname")
+	private String lastName;
+	@Column(name="email")
+	private String email;
+	
+	private int details;
+	
+	public Instructor(String firstName, String lastName, String email) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
+	
+	
+
+}

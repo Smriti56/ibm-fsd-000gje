@@ -1,0 +1,5 @@
+package oneToOneBidirectional.entity;
+
+public class Instructor {
+
+}

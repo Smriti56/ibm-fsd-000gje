@@ -1,0 +1,29 @@
+package myapp.dao;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.luv2code.myapp.entity.Instructor;
+import com.luv2code.myapp.factory.InstructorFactory;
+import myapp.factory.*;
+
+public class InstructorDAOImpl implements InstructorDAO {
+	
+	private static Session session=null;
+	{
+		session=InstructorFactory.getMySession();
+	}
+
+	
+
+	@Override
+	public void createInstructor(myapp.entity.Instructor instructor) {
+		// TODO Auto-generated method stub
+
+		session.getTransaction().begin();
+		session.persist(instructor);
+		session.getTransaction().commit();
+		
+	}
+
+}

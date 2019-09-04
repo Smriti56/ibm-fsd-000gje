@@ -1,0 +1,60 @@
+<%@page import="comm.example.model.Employee"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+<%@page import="java.util.List"%>
+<%@page import="comm.example.dao.EmployeeDaoImpl"%>
+<%@page import="comm.example.dao.EmployeeDao"%>
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<% 
+	String name = request.getParameter("name");
+	String pass = request.getParameter("password");
+	System.out.println(name+" "+pass);
+	
+	
+		EmployeeDao emp = new EmployeeDaoImpl();
+		List<Employee> list = emp.getAllEmployees();
+		Boolean flag = false;
+		//System.out.println(flag);
+
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i).getPasssword()+" "+list.get(i).getName());
+			
+			if (list.get(i).getPasssword().equals(pass) && list.get(i).getName().equals(name)) 
+			{
+				
+				flag = true;
+				break;
+			}
+			System.out.println(flag);
+			
+		}
+	%>
+	
+<c:if test="${flag}">
+<jsp:useBean id="u" class="comm.example.model.User" scope="request">
+
+
+  <jsp:setProperty name="u" property="*" />
+  </jsp:useBean>
+  You entered user name as <jsp:getProperty name="u" property="name" /> <br>
+  You entered user password as <jsp:getProperty name="u" property="password" /> <br>
+  <br>
+<b>Thank You</b>
+
+</c:if>
+	
+ 
+
+  
+</body>
+</html>

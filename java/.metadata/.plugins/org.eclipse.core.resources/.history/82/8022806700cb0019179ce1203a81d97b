@@ -1,0 +1,20 @@
+package com.ibm.fsd.mycoolapp;
+
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.engine.transaction.jta.platform.internal.SynchronizationRegistryBasedSynchronizationStrategy;
+import org.hibernate.SessionFactory;
+
+public class Tester {
+	
+	public static void main(String[] args) {
+		org.hibernate.SessionFactory factory= new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Employee.class).buildSessionFactory();
+		Session session =factory.openSession();
+		Employee emp=new Employee("Kinjal","k@g.com","1234","uk");
+		session.getTransaction().begin();
+		session.persist(emp);
+		System.out.println("inserted");
+		session.getTransaction().commit();	
+		}
+
+}

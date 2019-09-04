@@ -58,19 +58,11 @@ public class Controller extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		errMsgs=new LinkedList<String>();
-		
 		country=request.getParameter("country");
-
-		
 		name=request.getParameter("name");
-	
-		email=request.getParameter("email");
-		
-		
+		email=request.getParameter("email");		
 		password=request.getParameter("password");
 
-		
-		
 		if(errMsgs.isEmpty())
 		{
 			EmployeeService service=new EmployeeServiceImpl();

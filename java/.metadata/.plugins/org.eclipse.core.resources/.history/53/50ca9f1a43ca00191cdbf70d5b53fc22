@@ -1,0 +1,18 @@
+package comm.example.model;
+
+public class User {
+	private String name;
+	private String password;
+	
+	
+	
+
+	public String validate(String s1,String s2)
+	  {
+	    if(s1.equals(name) && s2.equals(password))
+	      return "VALID";
+	    else
+	     return "INVALID";
+	   }
+
+}

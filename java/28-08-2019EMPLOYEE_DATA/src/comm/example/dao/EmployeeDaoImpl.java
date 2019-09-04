@@ -101,14 +101,14 @@ try {
 
 	@Override
 	public void edit(Employee employee) throws SQLException {
-		PreparedStatement stmt=connection.prepareStatement("update employee set name=?, email=?, password=?, country=? where id=?");  
-		pStatement.setString(1, employee.getName());
-		pStatement.setString(2, employee.getEmail());
-		pStatement.setString(3, employee.getPasssword());
-		pStatement.setString(4, employee.getCountry());
-		pStatement.setInt(5, employee.getId());
-		resultSet =stmt.executeQuery();
-		resultSet.next();
+		System.out.println(employee.getId()+employee.getName()+employee.getEmail()+employee.getCountry()+employee.getPasssword());
+		PreparedStatement stmt = connection.prepareStatement("update employee set name=?, email=?, password=?, country=? where id=?");  
+		stmt.setString(1, employee.getName());
+		stmt.setString(2, employee.getEmail());
+		stmt.setString(3, employee.getPasssword());
+		stmt.setString(4, employee.getCountry());
+		stmt.setInt(5, employee.getId());
+		stmt.executeUpdate();
 	}
 
 	

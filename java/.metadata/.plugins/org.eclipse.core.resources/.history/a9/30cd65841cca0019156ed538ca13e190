@@ -1,0 +1,72 @@
+package comm.example.view;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Login
+ */
+@WebServlet("/login.view")
+public class Login extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doProcess(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doProcess(request, response);
+	}
+
+	
+	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		
+		
+		out.println("<!DOCTYPE html>\r\n" + 
+				"<html>\r\n" + 
+				"<head>\r\n" + 
+				"<meta charset=\"ISO-8859-1\">\r\n" + 
+				"<title>Add Employee</title>\r\n" + 
+				"<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\r\n" + 
+				"<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n" + 
+				"<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\r\n" + 
+				"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n" + 
+				"</head>\r\n" + 
+				"<body>\r\n" + 
+				"<h1>Add New Employee</h1>\r\n" + 
+				"<form name=\"Details\" id=\"form-1\" method=\"post\" action=\"list.view\">\r\n" + 
+				"\r\n" + 
+				"  <div class=\"form-group row\">\r\n" + 
+				"    <label for=\"colFormLabelLg\" class=\"col-sm-2 col-form-label col-form-label-lg\">Name</label>\r\n" + 
+				"    <div class=\"col-sm-10\">\r\n" + 
+				"      <input type=\"text\" class=\"form-control\" id=\"colFormLabel\" name=\"name\">\r\n" + 
+				"    </div>\r\n" + 
+				"  </div>\r\n" + 
+				" \r\n" + 
+				"  <button type=\"submit\" class=\"btn btn-primary\">Login</button>\r\n" + 
+				"\r\n" + 
+				"\r\n" + 
+				"</form>\r\n" + 
+				"\r\n" + 
+				"</body>\r\n" + 
+				"</html>");
+		
+		
+		
+		
+			
+	}
+
+}

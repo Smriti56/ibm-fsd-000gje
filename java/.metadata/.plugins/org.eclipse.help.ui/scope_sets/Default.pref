@@ -1,0 +1,5 @@
+#Tue Sep 03 09:10:25 IST 2019
+__DEFAULT__=true
+org.eclipse.help.ui.localSearch.master=true
+org.hibernate.eclipse.help.HibernateWiki.master=true
+org.jboss.tools.developer.search.master=true

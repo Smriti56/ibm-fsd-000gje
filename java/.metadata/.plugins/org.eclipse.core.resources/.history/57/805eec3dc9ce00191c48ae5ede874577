@@ -1,0 +1,14 @@
+package oneToOneBidirectional.entity;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="instructor_details")
+
+public class InstructorDetail {
+	
+	private int id;
+	private String hobby;
+	private String youtubeChannel;
+	
+}

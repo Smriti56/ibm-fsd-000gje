@@ -1,0 +1,8 @@
+package oneToOneBidirectional.entity;
+
+import javax.persistence.*;
+
+
+public class InstructorDetails {
+	
+}

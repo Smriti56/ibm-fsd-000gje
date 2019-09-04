@@ -1,6 +1,7 @@
 package comm.example.view;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
@@ -43,6 +44,8 @@ public class Edit extends HttpServlet {
 	
 	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
 
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
 		
 		country=request.getParameter("country");
 		name=request.getParameter("name");
@@ -51,7 +54,7 @@ public class Edit extends HttpServlet {
 		int id=Integer.parseInt(request.getParameter("id"));
 		EmployeeDao serv=new EmployeeDaoImpl();
 		Employee emp= new Employee(id,name,email,password,country);
-		//out.println(emp);
+		out.println(emp);
 		serv.edit(emp);
 		
 		RequestDispatcher  view=request.getRequestDispatcher("list.view");

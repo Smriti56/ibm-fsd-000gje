@@ -1,0 +1,15 @@
+package com.mycompany.javaee_hibernate.model;
+
+import javax.persistence.*;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name="instructor_detail")
+@Data
+@NoArgsConstructor
+public class InstructorDetail {
+	
+
+}

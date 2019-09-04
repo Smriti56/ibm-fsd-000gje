@@ -1,0 +1,9 @@
+package com.mycompany.spring_demo.model;
+
+public class Employee {
+
+	private int id;
+	private String firstname;
+	private String lasttname;
+	private String firstname;
+}

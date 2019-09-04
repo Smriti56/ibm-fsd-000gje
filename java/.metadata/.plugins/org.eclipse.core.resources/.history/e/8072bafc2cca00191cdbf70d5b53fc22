@@ -1,0 +1,36 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+
+<c:if test="${ERROR}!=NULL">
+
+</c:if>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form  id="form-1" action="add_league.do" method="post">
+		<label for="input-1">LeagueTitle:</label>
+		<input id="input-1" name="title" required="true" type="text"/><br/>
+		<label for="input-2">Year:</label>
+		<input id="input-2" name="year" required="true" type="text"/><br/>
+		<label for="input-3">Season:</label>
+		<select name="season">
+		<option value="unknown">Seasons</option>
+		<option value="Summer">Summer</option>
+		<option value="Winter">Winter</option>
+		<option value="Autumn">Autumn</option>
+		<option value="Spring">Spring</option>
+		</select><br/>
+		<input type="submit" value="Add" id="button-1"/>
+		
+	</form>
+	
+	
+	
+
+</body>
+</html>

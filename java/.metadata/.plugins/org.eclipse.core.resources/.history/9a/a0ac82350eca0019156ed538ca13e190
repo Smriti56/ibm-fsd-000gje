@@ -1,0 +1,82 @@
+package comm.example.view;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet(
+		urlPatterns = { "/add.view" }, 
+		initParams = { 
+				@WebInitParam(name = "Country", value = "India,UK,Australia,China,America")
+		})
+public class AddEmployee extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private String sList;	
+
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		super.init(config);
+		sList=config.getInitParameter("Country");
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doProcess(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doProcess(request, response);
+	}
+
+	
+	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		
+		out.println("<html><head><link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\r\n" + 
+				"<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>"
+				+ "<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\r\n" + 
+				"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script></head><body>");
+		
+		@SuppressWarnings("unchecked")
+		List<String> err=(List<String>) request.getAttribute("ERROR");
+		if(err!=null)
+		{
+			for(String s:err)
+			{
+				out.println("<font color='red'>"+s+"</font><br/>");
+			}
+		}
+		
+		out.println("<form action='controller.view' method='post'>");
+		out.println("Name<input type='text' name='name'><br/>");
+		out.println("Email<input type='text' name='email'><br/>");
+		out.println("Password<input type='text' name='password'><br/>");
+		out.println("Country");
+		//String sList=getServletConfig().getInitParameter("season-list");
+		String arrSList[]=sList.split(",");
+		out.println("<select name='country'><option value='unknown'>Country</option>");
+		for(String str:arrSList)
+		{  
+			out.println("<option value='"+str+"'"+">"+str+"</option>");
+		}
+		
+		out.println("</select><br/><input type='submit' value='add'></form>");
+		
+		out.println("<br/><a href='login.view'>LIST</body></html>");
+		
+			
+	}
+
+}

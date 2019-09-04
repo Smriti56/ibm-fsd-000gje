@@ -1,0 +1,8 @@
+<html>
+<body>
+<h2>Hello World!</h2>
+</body>
+<form action="controller1.do method="post">
+FirstName:<input type="text" name="fm=name">
+</form>
+</html>

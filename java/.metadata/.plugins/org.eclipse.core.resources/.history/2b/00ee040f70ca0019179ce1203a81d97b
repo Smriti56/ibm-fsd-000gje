@@ -1,0 +1,120 @@
+package comm.example.view;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import comm.example.dao.EmployeeDao;
+import comm.example.dao.EmployeeDaoImpl;
+import comm.example.factory.MyConnectionFactory;
+import comm.example.model.Employee;
+import comm.example.service.EmployeeService;
+import comm.example.service.EmployeeServiceImpl;
+
+/**
+ * Servlet implementation class List
+ */
+@WebServlet("/list.view")
+public class ListEmployee extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	List<Employee> emplist;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try {
+			doProcess(request, response);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try {
+			doProcess(request, response);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
+		
+		response.setContentType("text/html");
+		PrintWriter out=response.getWriter();
+		//EmployeeService service=new EmployeeServiceImpl();
+		EmployeeDao serv=new EmployeeDaoImpl();
+		
+		List<Employee> emplist=(List<Employee>)serv.getAllEmployees();
+		
+		
+		out.println("<!DOCTYPE html>\r\n" + 
+				"<html>\r\n" + 
+				"<head>\r\n" + 
+				"<meta charset=\"ISO-8859-1\">\r\n" + 
+				"<title>Add Employee</title>\r\n" + 
+				"<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\r\n" + 
+				"<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n" + 
+				"<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\r\n" + 
+				"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n" + 
+				"</head>\r\n" + 
+				"<body>\r\n" + 
+				"<div class=\"container\">\r\n" + 
+				"  <h2>List of all Employees</h2>         \r\n" + 
+				"  <table class=\"table table-condensed\">\r\n" + 
+				"    <thead>\r\n" + 
+				"      <tr>\r\n" + 
+				"      <th>ID</th>\r\n" + 
+				"        <th>Name</th>\r\n" + 
+				"        <th>Email</th>\r\n" + 
+				"        <th>Password</th>\r\n" + 
+				"        <th>Country</th>\r\n" + 
+				"        <th>Edit</th>\r\n" + 
+				"        <th>Delete</th>\r\n" + 
+				"      </tr>\r\n" + 
+				"    </thead>\r\n" + 
+				"    <tbody>\r\n" + 
+				"");
+		
+		
+		
+		for(Employee l:emplist)
+		{
+			
+			out.println("<tr>\r\n" + 
+					"        <td>l.getId()</td>\r\n" + 
+					"        <td>l.getName()</td>\r\n" + 
+					"        <td>l.getEmail()</td>\r\n" + 
+					"        <td>l.getPasssword()</td>\r\n" + 
+					"        <td>l.getCountry()</td>\r\n" + 
+					"        <td><a href='delete.view?eid=\"+l.getId()+\"'>Delete</a></td>\r\n" + 
+					"        <td><a href='edit.view?eid=\"+l.getId()+\"'>Edit</a></td>\r\n" + 
+					"      </tr>\r\n" + 
+					"     ");
+		    
+		} 
+		
+//		for(Employee l:emplist)
+//		{
+//			
+//			out.println("<tr><td>"+l.getId()+"</td><td>"+l.getName()+"</td><td>"+l.getEmail()+"</td><td>"+l.getPasssword()+"</td>"+"</td><td>"+l.getCountry()+"</td>"
+//					+ "<td><a href='delete.view?eid="+l.getId()+"'>delete</a></td><td><a href='edit.view?eid="+l.getId()+"'>edit</a></td></tr>");
+//		    
+//		} 
+//
+//		out.println("<table><tr><th>Id</th><th>Name</th><th>Email</th><th>Password</th><th>Country</th><th>Delete</th><th>Edit</th></tr>");
+//		
+		
+	}
+	
+}

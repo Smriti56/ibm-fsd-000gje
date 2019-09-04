@@ -1,0 +1,17 @@
+package oneToOneBidirectional.tester;
+
+import org.hibernate.SessionFactory;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		SessionFactory factory = new Configuration()
+				.configure("hibernate.cfg.xml")
+				.addAnnotatedClass(Instructor.class)
+				.addAnnotatedClass(InstructorDetail.class)
+				.buildSessionFactory();
+				
+		
+	}
+
+}

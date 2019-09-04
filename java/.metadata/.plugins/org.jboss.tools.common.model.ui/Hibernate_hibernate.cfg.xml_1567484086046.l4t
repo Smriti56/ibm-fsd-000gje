@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout resource="/Hibernate/src/main/hibernate.cfg.xml">
+ <TreeFormPage>
+  <Memento type="HibConfig3SessionFactory">
+   <Memento collapsed="false" type="Session Factory"/>
+   <Memento collapsed="false" type="Properties"/>
+   <Memento collapsed="false" type="Mappings"/>
+  </Memento>
+  <Memento type="">
+   <Memento collapsed="false" type="Properties Editor"/>
+  </Memento>
+  <Memento type="%No text%">
+   <Memento collapsed="false" type="Properties"/>
+   <Memento collapsed="false" type="Mappings"/>
+   <Memento collapsed="false" type="Events"/>
+   <Memento collapsed="false" type="Listeners"/>
+  </Memento>
+ </TreeFormPage>
+</Layout>

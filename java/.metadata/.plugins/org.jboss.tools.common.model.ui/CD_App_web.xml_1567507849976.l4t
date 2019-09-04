@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout resource="/CD_App/src/main/webapp/WEB-INF/web.xml">
+ <TreeFormPage>
+  <Memento type="FileWebApp">
+   <Memento collapsed="false" type="Web Descriptor 2.3"/>
+   <Memento collapsed="false" type="Context Params"/>
+   <Memento collapsed="false" type="Advanced"/>
+  </Memento>
+  <Memento type="WebAppWelcomFileList">
+   <Memento collapsed="false" type="Welcome Files"/>
+  </Memento>
+  <Memento type="">
+   <Memento type="Properties Editor"/>
+  </Memento>
+ </TreeFormPage>
+</Layout>

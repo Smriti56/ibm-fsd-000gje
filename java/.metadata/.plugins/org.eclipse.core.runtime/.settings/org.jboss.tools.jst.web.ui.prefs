@@ -1,4 +1,5 @@
 Default\ VPE\ Tab=1
-Size\ of\ Visual\ Editor\ Pane\ 0-100%=175
+Show\ Selection\ Tag\ Bar=false
+Size\ of\ Visual\ Editor\ Pane\ 0-100%=291
 eclipse.preferences.version=1
-org.jboss.tools.jst.web.ui.HTML5_EXPANDED_CATEGORY=jQuery Mobile
+org.jboss.tools.jst.web.ui.HTML5_EXPANDED_CATEGORY=Dynamic Palette Group

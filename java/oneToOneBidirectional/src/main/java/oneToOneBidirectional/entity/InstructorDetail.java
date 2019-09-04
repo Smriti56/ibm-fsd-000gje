@@ -1,0 +1,106 @@
+package oneToOneBidirectional.entity;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name="instructor_details")
+
+public class InstructorDetail {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
+	private int id;
+
+	@Column(name="youtube_channel")
+	private String youtubeChannel;
+	
+	@Column(name="hobby")
+	private String hobby;
+	
+	@OneToOne(mappedBy="instructorDetail", cascade=CascadeType.ALL)
+	private Instructor instructor;
+
+
+	
+	public InstructorDetail()
+	{
+		
+	}
+	
+	
+	public InstructorDetail(String youtubeChannel, String hobby) {
+		super();
+		this.youtubeChannel = youtubeChannel;
+		this.hobby = hobby;
+		
+	}
+
+
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	/**
+	 * @return the youtubeChannel
+	 */
+	public String getYoutubeChannel() {
+		return youtubeChannel;
+	}
+
+	/**
+	 * @param youtubeChannel the youtubeChannel to set
+	 */
+	public void setYoutubeChannel(String youtubeChannel) {
+		this.youtubeChannel = youtubeChannel;
+	}
+
+	/**
+	 * @return the hobby
+	 */
+	public String getHobby() {
+		return hobby;
+	}
+
+	/**
+	 * @param hobby the hobby to set
+	 */
+	public void setHobby(String hobby) {
+		this.hobby = hobby;
+	}
+
+	/**
+	 * @return the instructor
+	 */
+	public Instructor getInstructor() {
+		return instructor;
+	}
+
+	/**
+	 * @param instructor the instructor to set
+	 */
+	public void setInstructor(Instructor instructor) {
+		this.instructor = instructor;
+	}
+
+
+	@Override
+	public String toString() {
+		return "InstructorDetail [id=" + id + ", youtubeChannel=" + youtubeChannel + ", hobby=" + hobby
+				+ ", instructor=" + instructor + "]";
+	}
+
+	
+	
+	
+}

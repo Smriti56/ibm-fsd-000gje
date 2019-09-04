@@ -1,0 +1,8 @@
+package com.ibm.fsd.mycoolapp;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Employee {
+
+}

@@ -1,0 +1,51 @@
+package controller;
+
+import java.io.IOException;
+import java.util.Date;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import Application.CD;
+import Application.SpecialEditionCD;
+
+/**
+ * Servlet implementation class CDType
+ */
+public class CDType extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doProcess(request, response);
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		doProcess(request, response);
+	}
+protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String title=request.getParameter("title");
+		String artist=request.getParameter("artist");
+		int cost=Integer.parseInt(request.getParameter("cost"));
+		//String date=request.getParameter("purchasedate");
+		String cdtype=request.getParameter("cdtype");
+		
+		Date date=new Date();
+		
+		if(cdtype=="special_edition_cd");
+		{
+			request.setAttribute("SE", new CD(title,artist,new Date(),cost));
+			
+			
+		}
+		else
+		{
+			request.setAttribute("SE", new CD(title,artist,new Date(),cost));
+		}
+	}
+
+}

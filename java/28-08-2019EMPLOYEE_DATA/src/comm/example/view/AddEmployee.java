@@ -44,8 +44,7 @@ public class AddEmployee extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		
-		out.println("<html><body>");
-		
+
 		@SuppressWarnings("unchecked")
 		List<String> err=(List<String>) request.getAttribute("ERROR");
 		if(err!=null)
@@ -56,23 +55,61 @@ public class AddEmployee extends HttpServlet {
 			}
 		}
 		
-		out.println("<form action='controller.view' method='post'>");
-		out.println("Name<input type='text' name='name'><br/>");
-		out.println("Email<input type='text' name='email'><br/>");
-		out.println("Password<input type='text' name='password'><br/>");
-		out.println("Country");
-		//String sList=getServletConfig().getInitParameter("season-list");
-		String arrSList[]=sList.split(",");
-		out.println("<select name='country'><option value='unknown'>Country</option>");
-		for(String str:arrSList)
-		{  
-			out.println("<option value='"+str+"'"+">"+str+"</option>");
-		}
 		
-		out.println("</select><br/><input type='submit' value='add'></form>");
-		
-		out.println("<br/><a href='login.view'>LIST</body></html>");
-		
+		out.println("<!DOCTYPE html>\r\n" + 
+				"<html>\r\n" + 
+				"<head>\r\n" + 
+				"<meta charset=\"ISO-8859-1\">\r\n" + 
+				"<title>Add Employee</title>\r\n" + 
+				"<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">\r\n" + 
+				"<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>\r\n" + 
+				"<script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\r\n" + 
+				"<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\r\n" + 
+				"</head>\r\n" + 
+				"<body>\r\n" + 
+				"<h1>Add New Employee</h1>\r\n" + 
+				"<form name=\"Details\" id=\"form-1\" method=\"post\" action=\"controller.view\">\r\n" + 
+				"\r\n" + 
+				"  <div class=\"form-group row\">\r\n" + 
+				"    <label for=\"colFormLabelLg\" class=\"col-sm-2 col-form-label col-form-label-lg\">Name</label>\r\n" + 
+				"    <div class=\"col-sm-10\">\r\n" + 
+				"      <input type=\"text\" class=\"form-control\" id=\"colFormLabel\" name=\"name\">\r\n" + 
+				"    </div>\r\n" + 
+				"  </div>\r\n" + 
+				"  <div class=\"form-group row\">\r\n" + 
+				"    <label for=\"colFormLabelLg\" class=\"col-sm-2 col-form-label col-form-label-lg\">Email</label>\r\n" + 
+				"    <div class=\"col-sm-10\">\r\n" + 
+				"      <input type=\"email\" class=\"form-control\" id=\"colFormLabel\" name=\"email\">\r\n" + 
+				"    </div>\r\n" + 
+				"  </div>\r\n" + 
+				"  <div class=\"form-group row\">\r\n" + 
+				"    <label for=\"colFormLabelLg\" class=\"col-sm-2 col-form-label col-form-label-lg\">Password</label>\r\n" + 
+				"    <div class=\"col-sm-10\">\r\n" + 
+				"      <input type=\"password\" class=\"form-control\" id=\"colFormLabel\" name=\"password\" >\r\n" + 
+				"    </div>\r\n" + 
+				"  </div>\r\n" + 
+				"  \r\n" + 
+				"  <div class=\"form-group row\">\r\n" + 
+				"  <label for=\"colFormLabelLg\" class=\"col-sm-2 col-form-label col-form-label-lg\">Country</label>\r\n" + 
+				"\r\n" + 
+				"<div class=\"col-sm-10\">\r\n" + 
+				"     <select id=\"inputState\" class=\"form-control\" id=\"colFormLabel\" name=\"country\">\r\n" + 
+				"        <option value=\"unknown\">Select</option>\r\n" + 
+				"        <option value=\"India\">India</option>\r\n" + 
+				"        <option value=\"UK\">UK</option>\r\n" + 
+				"        <option value=\"China\">China</option>\r\n" + 
+				"        <option value=\"America\">America</option>\r\n" + 
+				"      </select>\r\n" + 
+				"    </div>\r\n" + 
+				"      \r\n" + 
+				"    </div>\r\n" + 
+				"  <button type=\"submit\" class=\"btn btn-primary\">Add</button>\r\n" + 
+				"\r\n" + 
+				"\r\n" + 
+				"</form>\r\n" + 
+				"\r\n" + 
+				"</body>\r\n" + 
+				"</html>");
 			
 	}
 

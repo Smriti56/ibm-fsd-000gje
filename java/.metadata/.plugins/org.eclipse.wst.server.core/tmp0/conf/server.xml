@@ -161,6 +161,18 @@
 
 
 
+</Context><Context docBase="E:\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\29-08-2019JSP_DEMO" path="/29-08-2019JSP_DEMO" reloadable="true" source="org.eclipse.jst.jee.server:29-08-2019JSP_DEMO"/><Context docBase="E:\eclipse-workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\27-08-2019WebSoccer" path="/27-08-2019WebSoccer" reloadable="true" source="org.eclipse.jst.jee.server:27-08-2019WebSoccer">
+
+    
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <WatchedResource>${catalina.base}/conf/web.xml</WatchedResource>
+
+    
+<Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxIdle="30" maxTotal="100" maxWaitMillis="10000" name="jdbc/mysql" password="root" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/hr" username="root"/>
+               
+
+
+
 </Context></Host>
     </Engine>
   </Service>
