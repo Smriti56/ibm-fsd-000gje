@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+<head>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+<meta charset="UTF-8" />
+<title>first thymeleaf page</title>
+</head>
+<body>
+	<h1>Player List</h1>
+	<hr>
+	<form action="#" th:action="@{/add}" method="POST">
+		<button type="submit" class="btn btn-info btn-sm ml-3 mr-1">ADD</button>
+
+	</form>
+	<hr>
+
+	<div class="col-small"></div>
+	<table class="table">
+		<thead class="thead-dark">
+			<tr>
+
+
+				<th scope="col">Name</th>
+				<th scope="col">Email</th>
+				<th scope="col">Sports</th>
+				<th scope="col">Delete</th>
+				<th scope="col">Update</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="player: ${players}">
+
+				<td th:text="${player.name}">123</td>
+				<td th:text="${player.email}">123</td>
+				<td th:text="${player.sports}">123</td>
+				<td><div class="col-small">
+						<button class="btn btn-warning btn-sm ml-3 mr-1">
+							<a th:href="@{'/delete/' + ${player.id}}"><span>Delete</span>
+						</button>
+
+					</div> </a></td>
+				<td><div class="col-small">
+						<form action="#" th:action="@{/update}" method="POST">
+
+							<input type="hidden" name="id" th:value="${player.id}" />
+							<button type="submit" class="btn btn-info btn-sm ml-3 mr-1">Update</button>
+
+						</form>
+					</div></td>
+			</tr>
+	</table>
+
+</body>
+</html>

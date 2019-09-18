@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+	integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+	crossorigin="anonymous">
+
+<title>Save League</title>
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<h3>Soccer League</h3>
+				<hr>
+
+				<p class="h4 mb-4">Save Player</p>
+
+				<form action="#" th:action="@{/saveNew}" th:object="${player}"
+					method="POST">
+					<input type="hidden" th:field="${player.id}"> <input type="text"
+						th:field="${player.name}" class="form-control mb-4 col-4"
+						placeholder="Name"> 
+						<input type="text"
+						th:field="${player.email}"  class="form-control mb-4 col-4"
+						placeholder="Team Name">
+
+
+<input type="text"
+						th:field="${player.sports}"  class="form-control mb-4 col-4"
+						placeholder="Team Name">
+				
+
+					<button type="submit" class="btn btn-info col-2">Save</button>
+
+				</form>
+
+				<hr>
+				<a th:href="@{/fetchPlayers}">Back to Player List</a><br>
+
+
+			</div>
+		</div>
+		<div class="col"></div>
+</body>
+
+</html>
