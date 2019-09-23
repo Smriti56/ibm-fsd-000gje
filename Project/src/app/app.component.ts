@@ -19,10 +19,12 @@ export class AppComponent implements OnInit{
             firstName: ['', Validators.required],
             lastName: ['', Validators.required],
             email: ['', [Validators.required, Validators.email]],
-            password: ['', [Validators.required, Validators.minLength(6)]],
+            password: ['', [Validators.required, Validators.minLength(8)]],
             confirmPassword: ['', Validators.required],
             height: ['', Validators.required],
             weight: ['', Validators.required]
+          }, {
+            validator: this.MustMatch('password', 'confirmPassword')
         });
     }
 
@@ -39,4 +41,23 @@ export class AppComponent implements OnInit{
 
         alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value))
     }
+
+    MustMatch(controlName: string, matchingControlName: string) {
+      return (formGroup: FormGroup) => {
+          const control = formGroup.controls[controlName];
+          const matchingControl = formGroup.controls[matchingControlName];
+  
+          if (matchingControl.errors && !matchingControl.errors.mustMatch) {
+              // return if another validator has already found an error on the matchingControl
+              return;
+          }
+  
+          // set error on matchingControl if validation fails
+          if (control.value !== matchingControl.value) {
+              matchingControl.setErrors({ mustMatch: true });
+          } else {
+              matchingControl.setErrors(null);
+          }
+      }
+}
 }
