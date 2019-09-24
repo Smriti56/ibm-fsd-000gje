@@ -1,0 +1,15 @@
+{
+    "name": "hello-npm",
+    "version": "1.0.0",
+    "description": "",
+    "main": "login.js",
+    "scripts": {
+        "start": "node login.js",
+        "restart": "nodemon login.js"
+    },
+    "author": "Mohsin Khursheed",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^1.19.1"
+    }
+}
