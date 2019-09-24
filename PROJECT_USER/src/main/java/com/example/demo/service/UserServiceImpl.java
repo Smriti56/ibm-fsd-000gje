@@ -3,10 +3,16 @@ package com.example.demo.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
+
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +28,9 @@ public class UserServiceImpl implements UserService {
 	UserRepository userRepository;
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
 	
+	 @Autowired
+	 private JavaMailSender javaMailSender;
+
 	
 	
 	public UserServiceImpl(Environment env, UserRepository userRepository,
@@ -68,6 +77,28 @@ public class UserServiceImpl implements UserService {
 
 		}
 		userRepository.save(user);
+		
+		
+			System.out.println("Sending Email...");
+			MimeMessage msg = javaMailSender.createMimeMessage();
+	        MimeMessageHelper helper;
+			try {
+				helper = new MimeMessageHelper(msg, true);
+				 helper.setTo(user.getEmail());
+			        helper.setSubject("Welcome to Fitness Tracker");
+			        helper.setText("<h3><b>Congratulations,You are our customer now!!<b></h3>");
+			        helper.setText("<p>We are so happy that now you are a part of our family and we promise to keep u fit and healthy</p><hr><p>ThankYou :)</p>", true);
+			        helper.addAttachment("my_photo.png", new ClassPathResource("android.png"));
+			        javaMailSender.send(msg);	
+			        System.out.println("Done");	
+			} catch (MessagingException e) {
+			
+				e.printStackTrace();
+			} 
+	       
+		
+		
+		
 		UserDto userDto = mapper.map(user, UserDto.class);
 		return userDto;
 	}
@@ -129,16 +160,23 @@ public class UserServiceImpl implements UserService {
 		String originalpass=bCryptPasswordEncoder.encode(userdto.getPassword());
 		
 		User user = userRepository.findByEmail(email);
-		UserDto userDto = mapper.map(user, UserDto.class);
-		System.out.println(originalpass);
 		
-		if(userDto.getEmail().equals(email) && userDto.getPassword().equals(originalpass))
-		{
-			return userDto;
-		}
-		else
+		if (user == null)
 		{
 			return null;
+		} else
+		{
+			UserDto userDto = mapper.map(user, UserDto.class);
+			if (userDto.getEmail().equals(email) && bCryptPasswordEncoder.matches(password, userDto.getPassword()))
+			{
+				return userDto;
+			}
+			else
+			{
+				return null;
+			}
+
+		
 		}
 		
 	}
