@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<aop-reference-model>
-<aop-project name="PROJECT_USER"/>
-<aop-project name="overweight-male-exercise-service"/>
-<aop-project name="feign-client-service"/>
-<aop-project name="overweight-male-meal-service"/>
-<aop-project name="commmon-eureka-server"/>
-</aop-reference-model>
