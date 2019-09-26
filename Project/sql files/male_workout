@@ -1,0 +1,375 @@
+create table male_workout(id int primary key auto_increment,day int not null,exercise_name varchar(255) not null,exercise_description text not null,amount int not null,exercise_url text not null);
+
+insert into male_workout(day,exercise_name,exercise_description,amount,exercise_url)
+values (1,'LUNGE','Start by standing,with your feets few inches apart,keep your hands on the hip,Stretch your right leg and bring your body down,till your right thigh is parallel to floor,come back to the intial position and repeat the same on the left leg',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunges.jpeg'),
+
+(1,'Inverted Board','Place your hands behind you,fingers toward you. Tap the floor iwth the palms of your hands as you peel the hips off the floor',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/inverted_board.jpeg'),
+
+(1,'PLANK WITH LEG LIFT','Be on your toes and forearms with your body straight,Raise your left lag for few seconds as it is possible,Now,lower your left leg and raise your right leg,Now come back to intial position,Repeat this',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(1,'PUSHUPS','Intially face-down prone position on the floor,Stretch your arms and touch the floor,Raise yourself by pushing the ground away from you,Repeat this',15,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/pushup.jpeg'),
+
+(1,'SINGLE LEG GLUTE BRIDGE','Lie on the floor with your feet flat and knees bent at a 90 degree angle,Keep repeating for the other side with proper pause',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/single_leg_glute_brdge.jpeg'),
+
+(1,'DONKEY KICKS LEFT SIDE','Raise a leg bend at 90 degree and stop movement when the thigh reaches the horizontal by pushing the sole of the foot towards the celling',15,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/donkey_kick.jpeg'),
+
+(1,'RECUMBENT LATERAL LEG ELEVATION','Lio on one side,lower arm and upper hand in front of the body to support you. The upper knee side flexes 90 degree and must remain on the ground,Repeat it for other leg ',15,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lateral_leg_elevtaion.jpeg'),
+
+(1,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',15,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(2,'PLANK JACK','Spread outstretched legs by making a first jump,join the legs with a second jump(Open and close the legs as quickly as possible)',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank_jack.jpeg'),
+
+(2,'FORWARD LUNGE WITH TWIST','Standing, legs apart from the width of the pelvis,back stright, hands behind the neck',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunge_with_twist.jpeg'),
+
+(2,'SQUATS','Stand with your legs a few inches apart, Stretch your arms to the front and bring the body down,till your thighs are parallel to the floor,Now come back to the intial position,Repeat it',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jump_squat.jpeg'),
+
+(2,'GLUTE BRIDGE','Lie on the floor with your knees bent and your feet flat on the floor; Keep your arms at your side with your palms down',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/glute_bridge.jpeg'),
+
+
+(2,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(2,'MOUNTAIN CLIMBER FEET JOINED BESIDE','Bring both feet back to your right hand simultaneously,bending your legs.You return to the intial position and then realize the movement on the other side',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climb_feet_joined.jpeg'),
+
+(2,'SIDE PLANK WITH LEG LIFT','Lie on your side and stand on the lower elbow and the side of your foot.Peel the hips off the ground,forming a straight line from the ankles to the shoulders',15,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/side_plank.jpeg'),
+
+(2,'THE SWIMMING','Raise the arms,legs,head and dorsal veterbate of the floor,move legs and arms asymmetrically and at the same tempo',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/swimming.jpeg'),
+
+(3,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(3,'THE SWIMMING','Raise the arms,legs,head and dorsal veterbate of the floor,move legs and arms asymmetrically and at the same tempo',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/swimming.jpeg'),
+
+(3,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(3,'LUNGE','Start by standing,with your feets few inches apart,keep your hands on the hip,Stretch your right leg and bring your body down,till your right thigh is parallel to floor,come back to the intial position and repeat the same on the left leg',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunges.jpeg'),
+
+(3,'COILED BUST WITH OUTSTRETCHED ARMS','Stretch your arms upwards,then roll your back forward,go as low as possible,if you can,put your hands on the ground,then go back',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(3,'BULGARIAN SQUATS ','Flex your legs while leaving your right foot on the bench and touch the ground with your right knee.Go back to the starting position,Repeat it for the other side',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/bulgarian_squat.jpeg'),
+
+(3,'RECUMBENT LATERAL LEG ELEVATION','Lio on one side,lower arm and upper hand in front of the body to support you. The upper knee side flexes 90 degree and must remain on the ground,Repeat it for other leg ',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lateral_leg_elevtaion.jpeg'),
+
+(3,'JACKKNIFE FROM FLAT','Lie on the floor on your back with your legs straight,extend your right arms behind your head',10,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jackknife.jpeg'),
+
+(4,'REST','REST',0,'REST'),
+
+(5,'HIGH KNEES','Start running on tiptoe up your knees,swing the opposite arm up to keep your balance,look ahead',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/high_knees.jpeg'),
+
+(5,'FORWARD LUNGE WITH TWIST','Standing, legs apart from the width of the pelvis,back stright, hands behind the neck',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunge_with_twist.jpeg'),
+
+(5,'SINGLE LEG GLUTE BRIDGE','Raise your pelvis by taking off your buttocks until your body forms a perfect line from your shoulders to your knees',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/single_leg_glute_brdge.jpeg'),
+
+(5,'JUMP SQUATS ','Squat until your thighs are parallel or lower on the floor.Arrive at this level,contract the muscles of your legs to jump and propel you as high as possible',35,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jump_squat.jpeg'),
+
+(5,'JACKKNIFE FROM FLAT','Lie on the floor on your back with your legs straight,extend your right arms behind your head',10,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jackknife.jpeg'),
+
+(5,'STEP-UP ONTO CHAIR','Ride on the chair as if you were climbing a stair step by contracting glutes,thighs,and abs,then doing a calf extension to stay on tiptoe',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/step_up_onto_chair.jpeg'),
+
+(5,'INVERTED BOARD','Place your hands behind you,fingers toward you. Tap the floor iwth the palms of your hands as you peel the hips off the floor',80,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/inverted_board.jpeg'),
+
+(5,'MOUNTAIN CLIMBER FEET JOINED BESIDE','Bring both feet back to your right hand simultaneously,bending your legs.You return to the intial position and then realize the movement on the other side',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climb_feet_joined.jpeg'),
+
+(6,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(6,'PLANK WITH LEG LIFT','Be on your toes and forearms with your body straight,Raise your left lag for few seconds as it is possible,Now,lower your left leg and raise your right leg,Now come back to intial position,Repeat this',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(6,'BULGARIAN SQUATS ','Flex your legs while leaving your right foot on the bench and touch the ground with your right knee.Go back to the starting position,Repeat it for the other side',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jump_squat.jpeg'),
+
+(6,'GLUTE BRIDGE','Lie on the floor with your knees bent and your feet flat on the floor; Keep your arms at your side with your palms down',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/glute_bridge.jpeg'),
+
+(6,'PLANK IN BALANCE RIGHT-LEFT SIDE','Raise the 2 arms to the celling and lower the trunk forward in counter rocking the leg back to maintain a certain balance,Repeat it for the other leg',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(6,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(6,'BURPEES','Get down in squat posiition and put your palms on the ground in front of your feet,Throw your legs back so that you are in the plank position.Make a pump while keeping the body spun and touching the chest on the ground',10,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(6,'COILED BUST WITH OUTSTRETCHED ARMS','Stretch your arms upwards,then roll your back forward,go as low as possible,if you can,put your hands on the ground,then go back',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(7,'REST','REST',0,'REST'),
+
+(8,'DONKEY KICKS LEFT SIDE','Raise a leg bend at 90 degree and stop movement when the thigh reaches the horizontal by pushing the sole of the foot towards the celling',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/donkey_kick.jpeg'),
+
+(8,'PUSHUPS','Intially face-down prone position on the floor,Stretch your arms and touch the floor,Raise yourself by pushing the ground away from you,Repeat this',15,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/pushup.jpeg'),
+
+(8,'SINGLE LEG GLUTE BRIDGE','Lie on the floor with your feet flat and knees bent at a 90 degree angle,Keep repeating for the other side with proper pause',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/single_leg_glute_brdge.jpeg'),
+
+(8,'LUNGE','Start by standing,with your feets few inches apart,keep your hands on the hip,Stretch your right leg and bring your body down,till your right thigh is parallel to floor,come back to the intial position and repeat the same on the left leg',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunges.jpeg'),
+
+(8,'Inverted Board','Place your hands behind you,fingers toward you. Tap the floor iwth the palms of your hands as you peel the hips off the floor',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/inverted_board.jpeg'),
+
+(8,'PLANK WITH LEG LIFT','Be on your toes and forearms with your body straight,Raise your left lag for few seconds as it is possible,Now,lower your left leg and raise your right leg,Now come back to intial position,Repeat this',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(8,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(8,'RECUMBENT LATERAL LEG ELEVATION','Lio on one side,lower arm and upper hand in front of the body to support you. The upper knee side flexes 90 degree and must remain on the ground,Repeat it for other leg ',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lateral_leg_elevtaion.jpeg'),
+
+(9,'GLUTE BRIDGE','Lie on the floor with your knees bent and your feet flat on the floor; Keep your arms at your side with your palms down',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/glute_bridge.jpeg'),
+
+(9,'PLANK JACK','Spread outstretched legs by making a first jump,join the legs with a second jump(Open and close the legs as quickly as possible)',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank_jack.jpeg'),
+
+(9,'FORWARD LUNGE WITH TWIST','Standing, legs apart from the width of the pelvis,back stright, hands behind the neck',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunge_with_twist.jpeg'),
+
+(9,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(9,'SQUATS','Stand with your legs a few inches apart, Stretch your arms to the front and bring the body down,till your thighs are parallel to the floor,Now come back to the intial position,Repeat it',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jump_squat.jpeg'),
+
+(9,'SIDE PLANk WITH LEG LIFT','Lie on your side and stand on the lower elbow and the side of your foot.Peel the hips off the ground,forming a straight line from the ankles to the shoulders',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/side_plank.jpeg'),
+
+(9,'MOUNTAIN CLIMBER FEET JOINED BESIDE','Bring both feet back to your right hand simultaneously,bending your legs.You return to the intial position and then realize the movement on the other side',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climb_feet_joined.jpeg'),
+
+(9,'THE SWIMMING','Raise the arms,legs,head and dorsal veterbate of the floor,move legs and arms asymmetrically and at the same tempo',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/swimming.jpeg'),
+
+(10,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(10,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(10,'THE SWIMMING','Raise the arms,legs,head and dorsal veterbate of the floor,move legs and arms asymmetrically and at the same tempo',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/swimming.jpeg'),
+
+(10,'LUNGE','Start by standing,with your feets few inches apart,keep your hands on the hip,Stretch your right leg and bring your body down,till your right thigh is parallel to floor,come back to the intial position and repeat the same on the left leg',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunges.jpeg'),
+
+(10,'RECUMBENT LATERAL LEG ELEVATION','Lie on one side,lower arm and upper hand in front of the body to support you. The upper knee side flexes 90 degree and must remain on the ground,Repeat it for other leg ',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lateral_leg_elevtaion.jpeg'),
+
+(10,'COILED BUST WITH OUTSTRETCHED ARMS','Stretch your arms upwards,then roll your back forward,go as low as possible,if you can,put your hands on the ground,then go back',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(10,'BULGARIAN SQUATS ','Flex your legs while leaving your right foot on the bench and touch the ground with your right knee.Go back to the starting position,Repeat it for the other side',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/bulgarian_squat.jpeg'),
+
+(10,'JACKKNIFE FROM FLAT','Lie on the floor on your back with your legs straight,extend your right arms behind your head',20,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jackknife.jpeg'),
+
+(11,'REST','REST',0,'REST'),
+
+
+(12,'SINGLE LEG GLUTE BRIDGE','Raise your pelvis by taking off your buttocks until your body forms a perfect line from your shoulders to your knees',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/single_leg_glute_brdge.jpeg'),
+
+(12,'JACKKNIFE FROM FLAT','Lie on the floor on your back with your legs straight,extend your right arms behind your head',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jackknife.jpeg'),
+
+(12,'HIGH KNEES','Start running on tiptoe up your knees,swing the opposite arm up to keep your balance,look ahead',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/high_knees.jpeg'),
+
+(12,'FORWARD LUNGE WITH TWIST','Standing, legs apart from the width of the pelvis,back stright, hands behind the neck',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunge_with_twist.jpeg'),
+
+(12,'JUMP SQUATS ','Squat until your thighs are parallel or lower on the floor.Arrive at this level,contract the muscles of your legs to jump and propel you as high as possible',75,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jump_squat.jpeg'),
+
+(12,'Inverted Board','Place your hands behind you,fingers toward you. Tap the floor iwth the palms of your hands as you peel the hips off the floor',80,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/inverted_board.jpeg'),
+
+(12,'MOUNTAIN CLIMBER FEET JOINED BESIDE','Bring both feet back to your right hand simultaneously,bending your legs.You return to the intial position and then realize the movement on the other side',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climb_feet_joined.jpeg'),
+
+(12,'STEP-UP ONTO CHAIR','Ride on the chair as if you were climbing a stair step by contracting glutes,thighs,and abs,then doing a calf extension to stay on tiptoe',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/step_up_onto_chair.jpeg'),
+
+(13,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(13,'PLANK WITH LEG LIFT','Be on your toes and forearms with your body straight,Raise your left lag for few seconds as it is possible,Now,lower your left leg and raise your right leg,Now come back to intial position,Repeat this',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(13,'BULGARIAN SQUATS ','Flex your legs while leaving your right foot on the bench and touch the ground with your right knee.Go back to the starting position,Repeat it for the other side',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/bulgarian_squat.jpeg'),
+
+(13,'PLANK IN BALANCE RIGHT-LEFT SIDE','Raise the 2 arms to the celling and lower the trunk forward in counter rocking the leg back to maintain a certain balance,Repeat it for the other leg',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(13,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',70,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(13,'GLUTE BRIDGE','Lie on the floor with your knees bent and your feet flat on the floor; Keep your arms at your side with your palms down',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/glute_bridge.jpeg'),
+
+(13,'BURPEES','Get down in squat posiition and put your palms on the ground in front of your feet,Throw your legs back so that you are in the plank position.Make a pump while keeping the body spun and touching the chest on the ground',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(13,'COILED BUST WITH OUTSTRETCHED ARMS','Stretch your arms upwards,then roll your back forward,go as low as possible,if you can,put your hands on the ground,then go back',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(14,'REST','REST',0,'REST'),
+
+(15,'LUNGE','Start by standing,with your feets few inches apart,keep your hands on the hip,Stretch your right leg and bring your body down,till your right thigh is parallel to floor,come back to the intial position and repeat the same on the left leg',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunges.jpeg'),
+
+(15,'Inverted Board','Place your hands behind you,fingers toward you. Tap the floor iwth the palms of your hands as you peel the hips off the floor',35,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/inverted_board.jpeg'),
+
+(15,'PLANK WITH LEG LIFT','Be on your toes and forearms with your body straight,Raise your left lag for few seconds as it is possible,Now,lower your left leg and raise your right leg,Now come back to intial position,Repeat this',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(15,'DONKEY KICKS LEFT SIDE','Raise a leg bend at 90 degree and stop movement when the thigh reaches the horizontal by pushing the sole of the foot towards the celling',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/donkey_kick.jpeg'),
+
+(15,'PUSHUPS','Intially face-down prone position on the floor,Stretch your arms and touch the floor,Raise yourself by pushing the ground away from you,Repeat this',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/pushup.jpeg'),
+
+(15,'SINGLE LEG GLUTE BRIDGE','Lie on the floor with your feet flat and knees bent at a 90 degree angle,Keep repeating for the other side with proper pause',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/single_leg_glute_brdge.jpeg'),
+
+(15,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(15,'RECUMBENT LATERAL LEG ELEVATION','Lio on one side,lower arm and upper hand in front of the body to support you. The upper knee side flexes 90 degree and must remain on the ground,Repeat it for other leg ',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lateral_leg_elevtaion.jpeg'),
+
+(16,'FORWARD LUNGE WITH TWIST','Standing, legs apart from the width of the pelvis,back stright, hands behind the neck',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunge_with_twist.jpeg'),
+
+(16,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(16,'SQUATS','Stand with your legs a few inches apart, Stretch your arms to the front and bring the body down,till your thighs are parallel to the floor,Now come back to the intial position,Repeat it',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jump_squat.jpeg'),
+
+(16,'GLUTE BRIDGE','Lie on the floor with your knees bent and your feet flat on the floor; Keep your arms at your side with your palms down',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/glute_bridge.jpeg'),
+
+(16,'PLANK JACK','Spread outstretched legs by making a first jump,join the legs with a second jump(Open and close the legs as quickly as possible)',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank_jack.jpeg'),
+
+(16,'SIDE PLANk WITH LEG LIFT','Lie on your side and stand on the lower elbow and the side of your foot.Peel the hips off the ground,forming a straight line from the ankles to the shoulders',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/side_plank.jpeg'),
+
+(16,'MOUNTAIN CLIMBER FEET JOINED BESIDE','Bring both feet back to your right hand simultaneously,bending your legs.You return to the intial position and then realize the movement on the other side',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climb_feet_joined.jpeg'),
+
+(16,'THE SWIMMING','Raise the arms,legs,head and dorsal veterbate of the floor,move legs and arms asymmetrically and at the same tempo',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/swimming.jpeg'),
+
+(17,'RECUMBENT LATERAL LEG ELEVATION','Lio on one side,lower arm and upper hand in front of the body to support you. The upper knee side flexes 90 degree and must remain on the ground,Repeat it for other leg ',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lateral_leg_elevtaion.jpeg'),
+
+(17,'COILED BUST WITH OUTSTRETCHED ARMS','Stretch your arms upwards,then roll your back forward,go as low as possible,if you can,put your hands on the ground,then go back',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(17,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',80,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(17,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(17,'THE SWIMMING','Raise the arms,legs,head and dorsal veterbate of the floor,move legs and arms asymmetrically and at the same tempo',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/swimming.jpeg'),
+
+(17,'LUNGE','Start by standing,with your feets few inches apart,keep your hands on the hip,Stretch your right leg and bring your body down,till your right thigh is parallel to floor,come back to the intial position and repeat the same on the left leg',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunges.jpeg'),
+
+(17,'BULGARIAN SQUATS ','Flex your legs while leaving your right foot on the bench and touch the ground with your right knee.Go back to the starting position,Repeat it for the other side',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/bulgarian_squat.jpeg'),
+
+(17,'JACKKNIFE FROM FLAT','Lie on the floor on your back with your legs straight,extend your right arms behind your head',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jackknife.jpeg'),
+
+(18,'REST','REST',0,'REST'),
+
+(19,'HIGH KNEES','Start running on tiptoe up your knees,swing the opposite arm up to keep your balance,look ahead',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/high_knees.jpeg'),
+
+(19,'FORWARD LUNGE WITH TWIST','Standing, legs apart from the width of the pelvis,back stright, hands behind the neck',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunge_with_twist.jpeg'),
+
+(19,'SINGLE LEG GLUTE BRIDGE','Raise your pelvis by taking off your buttocks until your body forms a perfect line from your shoulders to your knees',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/single_leg_glute_brdge.jpeg'),
+
+(19,'JACKKNIFE FROM FLAT','Lie on the floor on your back with your legs straight,extend your right arms behind your head',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jackknife.jpeg'),
+
+(19,'JUMP SQUATS ','Squat until your thighs are parallel or lower on the floor.Arrive at this level,contract the muscles of your legs to jump and propel you as high as possible',70,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jump_squat.jpeg'),
+
+(19,'STEP-UP ONTO CHAIR','Ride on the chair as if you were climbing a stair step by contracting glutes,thighs,and abs,then doing a calf extension to stay on tiptoe',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/step_up_onto_chair.jpeg'),
+
+(19,'Inverted Board','Place your hands behind you,fingers toward you. Tap the floor iwth the palms of your hands as you peel the hips off the floor',80,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/inverted_board.jpeg'),
+
+(19,'MOUNTAIN CLIMBER FEET JOINED BESIDE','Bring both feet back to your right hand simultaneously,bending your legs.You return to the intial position and then realize the movement on the other side',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climb_feet_joined.jpeg'),
+
+(20,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(20,'PLANK WITH LEG LIFT','Be on your toes and forearms with your body straight,Raise your left lag for few seconds as it is possible,Now,lower your left leg and raise your right leg,Now come back to intial position,Repeat this',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(20,'BULGARIAN SQUATS ','Flex your legs while leaving your right foot on the bench and touch the ground with your right knee.Go back to the starting position,Repeat it for the other side',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/bulgarian_squat.jpeg'),
+
+(20,'PLANK IN BALANCE RIGHT-LEFT SIDE','Raise the 2 arms to the celling and lower the trunk forward in counter rocking the leg back to maintain a certain balance,Repeat it for the other leg',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(20,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',100,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(20,'GLUTE BRIDGE','Lie on the floor with your knees bent and your feet flat on the floor; Keep your arms at your side with your palms down',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/glute_bridge.jpeg'),
+
+(20,'BURPEES','Get down in squat posiition and put your palms on the ground in front of your feet,Throw your legs back so that you are in the plank position.Make a pump while keeping the body spun and touching the chest on the ground',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(20,'COILED BUST WITH OUTSTRETCHED ARMS','Stretch your arms upwards,then roll your back forward,go as low as possible,if you can,put your hands on the ground,then go back',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(21 ,'REST','REST',0,'REST'),
+
+(22,'DONKEY KICKS LEFT SIDE','Raise a leg bend at 90 degree and stop movement when the thigh reaches the horizontal by pushing the sole of the foot towards the celling',25,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/donkey_kick.jpeg'),
+
+(22,'PUSHUPS','Intially face-down prone position on the floor,Stretch your arms and touch the floor,Raise yourself by pushing the ground away from you,Repeat this',35,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/pushup.jpeg'),
+
+(22,'SINGLE LEG GLUTE BRIDGE','Lie on the floor with your feet flat and knees bent at a 90 degree angle,Keep repeating for the other side with proper pause',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/single_leg_glute_brdge.jpeg'),
+
+(22,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(22,'RECUMBENT LATERAL LEG ELEVATION','Lio on one side,lower arm and upper hand in front of the body to support you. The upper knee side flexes 90 degree and must remain on the ground,Repeat it for other leg ',35,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lateral_leg_elevtaion.jpeg'),
+
+(22,'LUNGE','Start by standing,with your feets few inches apart,keep your hands on the hip,Stretch your right leg and bring your body down,till your right thigh is parallel to floor,come back to the intial position and repeat the same on the left leg',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunges.jpeg'),
+
+(22,'Inverted Board','Place your hands behind you,fingers toward you. Tap the floor iwth the palms of your hands as you peel the hips off the floor',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/inverted_board.jpeg'),
+
+(22,'PLANK WITH LEG LIFT','Be on your toes and forearms with your body straight,Raise your left lag for few seconds as it is possible,Now,lower your left leg and raise your right leg,Now come back to intial position,Repeat this',80,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(23,'SQUATS','Stand with your legs a few inches apart, Stretch your arms to the front and bring the body down,till your thighs are parallel to the floor,Now come back to the intial position,Repeat it',80,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jump_squat.jpeg'),
+
+(23,'GLUTE BRIDGE','Lie on the floor with your knees bent and your feet flat on the floor; Keep your arms at your side with your palms down',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/glute_bridge.jpeg'),
+
+(23,'PLANK JACK','Spread outstretched legs by making a first jump,join the legs with a second jump(Open and close the legs as quickly as possible)',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank_jack.jpeg'),
+
+(23,'FORWARD LUNGE WITH TWIST','Standing, legs apart from the width of the pelvis,back stright, hands behind the neck',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunge_with_twist.jpeg'),
+
+(23,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(23,'SIDE PLANk WITH LEG LIFT','Lie on your side and stand on the lower elbow and the side of your foot.Peel the hips off the ground,forming a straight line from the ankles to the shoulders',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/side_plank.jpeg'),
+
+(23,'MOUNTAIN CLIMBER FEET JOINED BESIDE','Bring both feet back to your right hand simultaneously,bending your legs.You return to the intial position and then realize the movement on the other side',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climb_feet_joined.jpeg'),
+
+(23,'THE SWIMMING','Raise the arms,legs,head and dorsal veterbate of the floor,move legs and arms asymmetrically and at the same tempo',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/swimming.jpeg'),
+
+(24,'LUNGE','Start by standing,with your feets few inches apart,keep your hands on the hip,Stretch your right leg and bring your body down,till your right thigh is parallel to floor,come back to the intial position and repeat the same on the left leg',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunges.jpeg'),
+
+(24,'RECUMBENT LATERAL LEG ELEVATION','Lio on one side,lower arm and upper hand in front of the body to support you. The upper knee side flexes 90 degree and must remain on the ground,Repeat it for other leg ',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lateral_leg_elevtaion.jpeg'),
+
+(24,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',80,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(24,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(24,'THE SWIMMING','Raise the arms,legs,head and dorsal veterbate of the floor,move legs and arms asymmetrically and at the same tempo',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/swimming.jpeg'),
+
+(24,'COILED BUST WITH OUTSTRETCHED ARMS','Stretch your arms upwards,then roll your back forward,go as low as possible,if you can,put your hands on the ground,then go back',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(24,'BULGARIAN SQUATS ','Flex your legs while leaving your right foot on the bench and touch the ground with your right knee.Go back to the starting position,Repeat it for the other side',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/bulgarian_squat.jpeg'),
+
+(24,'JACKKNIFE FROM FLAT','Lie on the floor on your back with your legs straight,extend your right arms behind your head',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jackknife.jpeg'),
+
+(25,'REST','REST',0,'REST'),
+
+(26,'HIGH KNEES','Start running on tiptoe up your knees,swing the opposite arm up to keep your balance,look ahead',80,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/high_knees.jpeg'),
+
+(26,'FORWARD LUNGE WITH TWIST','Standing, legs apart from the width of the pelvis,back stright, hands behind the neck',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunge_with_twist.jpeg'),
+
+(26,'SINGLE LEG GLUTE BRIDGE','Raise your pelvis by taking off your buttocks until your body forms a perfect line from your shoulders to your knees',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/single_leg_glute_brdge.jpeg'),
+
+(26,'JACKKNIFE FROM FLAT','Lie on the floor on your back with your legs straight,extend your right arms behind your head',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jackknife.jpeg'),
+
+(26,'JUMP SQUATS ','Squat until your thighs are parallel or lower on the floor.Arrive at this level,contract the muscles of your legs to jump and propel you as high as possible',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jump_squat.jpeg'),
+
+(26,'STEP-UP ONTO CHAIR','Ride on the chair as if you were climbing a stair step by contracting glutes,thighs,and abs,then doing a calf extension to stay on tiptoe',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/step_up_onto_chair.jpeg'),
+
+(26,'Inverted Board','Place your hands behind you,fingers toward you. Tap the floor iwth the palms of your hands as you peel the hips off the floor',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/inverted_board.jpeg'),
+
+(26,'MOUNTAIN CLIMBER FEET JOINED BESIDE','Bring both feet back to your right hand simultaneously,bending your legs.You return to the intial position and then realize the movement on the other side',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climb_feet_joined.jpeg'),
+
+(27,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',70,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(27,'PLANK WITH LEG LIFT','Be on your toes and forearms with your body straight,Raise your left lag for few seconds as it is possible,Now,lower your left leg and raise your right leg,Now come back to intial position,Repeat this',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(27,'PLANK IN BALANCE RIGHT-LEFT SIDE','Raise the 2 arms to the celling and lower the trunk forward in counter rocking the leg back to maintain a certain balance,Repeat it for the other leg',70,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank.jpeg'),
+
+(27,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',100,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(27,'BULGARIAN SQUATS ','Flex your legs while leaving your right foot on the bench and touch the ground with your right knee.Go back to the starting position,Repeat it for the other side',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/bulgarian_squat.jpeg'),
+
+(27,'GLUTE BRIDGE','Lie on the floor with your knees bent and your feet flat on the floor; Keep your arms at your side with your palms down',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/glute_bridge.jpeg'),
+
+(27,'BURPEES','Get down in squat posiition and put your palms on the ground in front of your feet,Throw your legs back so that you are in the plank position.Make a pump while keeping the body spun and touching the chest on the ground',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(27,'COILED BUST WITH OUTSTRETCHED ARMS','Stretch your arms upwards,then roll your back forward,go as low as possible,if you can,put your hands on the ground,then go back',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(28,'REST','REST',0,'REST'),
+
+(29,'SQUATS','Stand with your legs a few inches apart, Stretch your arms to the front and bring the body down,till your thighs are parallel to the floor,Now come back to the intial position,Repeat it',80,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jump_squat.jpeg'),
+
+(29,'GLUTE BRIDGE','Lie on the floor with your knees bent and your feet flat on the floor; Keep your arms at your side with your palms down',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/glute_bridge.jpeg'),
+
+(29,'SIDE PLANk WITH LEG LIFT','Lie on your side and stand on the lower elbow and the side of your foot.Peel the hips off the ground,forming a straight line from the ankles to the shoulders',30,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/side_plank.jpeg'),
+
+(29,'MOUNTAIN CLIMBER FEET JOINED BESIDE','Bring both feet back to your right hand simultaneously,bending your legs.You return to the intial position and then realize the movement on the other side',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climb_feet_joined.jpeg'),
+
+(29,'PLANK JACK','Spread outstretched legs by making a first jump,join the legs with a second jump(Open and close the legs as quickly as possible)',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/plank_jack.jpeg'),
+
+(29,'FORWARD LUNGE WITH TWIST','Standing, legs apart from the width of the pelvis,back stright, hands behind the neck',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunge_with_twist.jpeg'),
+
+(29,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+
+(29,'THE SWIMMING','Raise the arms,legs,head and dorsal veterbate of the floor,move legs and arms asymmetrically and at the same tempo',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/swimming.jpeg'),
+
+(30,'MOUNTAIN CLIMBER','Bring both of your legs back to your torso simultaneously. Your knees are positioned in your hands. It is then necessary to return to the intial position',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/mountain_climber.jpeg'),
+
+(30,'THE SWIMMING','Raise the arms,legs,head and dorsal veterbate of the floor,move legs and arms asymmetrically and at the same tempo',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/swimming.jpeg'),
+
+(30,'FLUTTER KICKS','Stand by lying on your back,Keep your arms on the side and lift your legs,let the legs be as straight as possible,now quickly raise your right leg and at the same time,lower your left leg,then do the same on the other leg repeat it',80,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/flutter_kicks.jpeg'),
+
+(30,'LUNGE','Start by standing,with your feets few inches apart,keep your hands on the hip,Stretch your right leg and bring your body down,till your right thigh is parallel to floor,come back to the intial position and repeat the same on the left leg',50,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lunges.jpeg'),
+
+(30,'RECUMBENT LATERAL LEG ELEVATION','Lio on one side,lower arm and upper hand in front of the body to support you. The upper knee side flexes 90 degree and must remain on the ground,Repeat it for other leg ',60,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/lateral_leg_elevtaion.jpeg'),
+
+(30,'COILED BUST WITH OUTSTRETCHED ARMS','Stretch your arms upwards,then roll your back forward,go as low as possible,if you can,put your hands on the ground,then go back',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/coiled_burst.jpeg'),
+
+(30,'BULGARIAN SQUATS ','Flex your legs while leaving your right foot on the bench and touch the ground with your right knee.Go back to the starting position,Repeat it for the other side',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/bulgarian_squat.jpeg'),
+
+(30,'JACKKNIFE FROM FLAT','Lie on the floor on your back with your legs straight,extend your right arms behind your head',40,'https://raw.githubusercontent.com/saket2408/fitnessTracker-project/master/images/unerweight_male/jackknife.jpeg');
+
+select * from male_workout;

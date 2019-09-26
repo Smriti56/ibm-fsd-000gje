@@ -1,0 +1,78 @@
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    opacity: 1;
+}
+
+.li {
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+    padding-right: 10px;
+}
+
+.li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.li a:hover {
+    background-color: #111;
+}
+
+.title {
+    float: left;
+}
+
+.image {
+    height: 40px;
+    width: 40px;
+}
+
+.pill {
+    width: 50%;
+}
+
+.pill a {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.day {
+    width: 10%;
+    height: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.day1 {
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+}
+
+.mainCard {
+    width: 90%;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.imageCard {
+    height: 100%;
+    width: 90%;
+    margin: 3px;
+}
+
+.cardBody {
+    border-top: 1px solid black;
+    padding: 10px;
+}

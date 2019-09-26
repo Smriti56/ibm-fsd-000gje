@@ -1,0 +1,53 @@
+<div class="background row">
+    <ul>
+        <li class="title">
+            <a routerLink='../login'><img class="image" src="../../favicon.ico"> Fitness Tracker</a>
+        </li>
+
+        <li><a routerLink='../login'>Login</a></li>
+        <li><a routerLink='../signup'>Sign Up</a></li>
+        <li><a routerLink='../index'>Home</a></li>
+    </ul>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="qoute">
+                <b><i>“The last three or four reps is what makes the muscle grow. This area of pain divides a 
+                    champion from someone who is not a champion.”<br>
+        
+                   &nbsp; — Arnold Schwarzenegger, seven-time Mr. Olympia</i></b>
+            </div>
+
+        </div>
+
+        <div class="form-class col-sm-6">
+            <br><br>
+
+            <img class="form-image " src="../../favicon.ico">
+
+            <h2 style="color: white"><b>LOGIN</b></h2>
+            <br><br><br>
+
+            <div *ngIf="error">
+                <div class="alert alert-danger">
+                    <strong style="color: black; font-size: 20px;">{{error}}</strong>
+                </div>
+            </div>
+            <form #loginForm="ngForm" (submit)="edit(loginForm.value)">
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" id="email" placeholder="Email" class="form-control" name="email"  ngModel required/>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" class="form-control" placeholder="password" name="password" ngModel required/>
+                </div>
+
+                <button type="submit" class="btn btn-primary">login</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

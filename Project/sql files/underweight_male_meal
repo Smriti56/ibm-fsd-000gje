@@ -1,0 +1,74 @@
+create table underweight_male_meal(id int not null primary key auto_increment,breakfast text not null,lunch text not null,snack text not null,dinner text not null);
+
+desc underweight_male_meal;
+
+drop table underweight_male_meal;
+
+insert into underweight_male_meal(breakfast,lunch,snack,dinner) values ('a','b','c','d');
+
+delete from underweight_male_meal;
+
+set sql_safe_updates=0;
+
+insert into underweight_male_meal(breakfast,lunch,snack,dinner) values ('120g of bread;30g of butter;1 yogurt;coffee or tea', '20g of bread;100g of read meat;200g of vegetables;100g pasta;1 fruit yogurt;orange','tea or infusion;40g of biscuits;150ml of milk','Cucumber salad with 15ml walnut oil;100g of fish;200g of pulses with 5ml of olive oil;1 yogurt;1 kiwi'),
+
+('80g of cereals;150 ml of milk;coffee or tea','20g of bread;100g of white meat;200g of vegetables;75g of potatoes;1 dessert cream;1 peach compote','tea or infusion;40g of biscuits;150ml hot milk with cinnamon;20g dark chocolate','cucumber salad with 15ml walnut oil;omelets;200g of pulses with 5ml of olive oil;1 yogurt;Apple'),
+
+('120g of bread;30g of butter;infusion;100g of cottage cheese','20g of bread;100g of whiting;250g of potatoes;50g of goat cheese;orange','tea or infusion;60g of bread;50g of cheese;10g of almond','salad of lamb;100g of white meat;200g pasta and 20g parmesan cheese;1 vanilla yogurt;100g pineapple'),
+
+('80g of cereals;150ml of milk;coffee or tea','20g of bread;150g of whiting;200g of rice;50g of goat cheese;kiwi','tea or infusion;40g of biscuits;1 yogurt','salad of lamb;100g of white meat;200g raw vegetables;75g of rice;1 vanilla yogurt;100g pineapple'),
+
+('120g of bread;30g of butter;1 yogurt;coffee or tea','150g lean red meat;250g of raw vegetables;75g pasta with 5ml of olive oil;orange','tea or infusion;40g of biscuits;10g of nuts;1 yogurt','100g of white meat;150g of raw vegetables;300g of potatoes;100g of white cheese;1 peach compote'),
+
+('80g of cereals;150ml of milk;coffee or tea','20g of bread;150g of whiting;75g pasta with 5ml of olive oild;50g of goat cheese;kiwi','tea or infusion;40g of biscuits;10g of nuts;yogurt','20g of wholemeal bread;100g of white meat;200g ground vegetables;15g light mayonnaise;apple'),
+
+('120g of bread;30g of butter;2 whole eggs;coffee or tea','20g of bread;150g of whiting;300g of potatoes;150g of raw vegetables;orange','tea or infusion;40g of biscuits;150ml hot milk with cinnamom;20g dark chocolate','20g of wholemeal bread;cucumber salad with 15ml walnut oil;100g of red meat;200g of pulses with 5ml of olive oil;15g light mayonnaise;apple'),
+
+('120g of bread;30g of butter;1 yogurt;coffee or tea', '20g of bread;100g of read meat;200g of vegetables;100g pasta;1 fruit yogurt;orange','tea or infusion;40g of biscuits;150ml of milk','Cucumber salad with 15ml walnut oil;100g of fish;200g of pulses with 5ml of olive oil;1 yogurt;1 kiwi'),
+
+('80g of cereals;150 ml of milk;coffee or tea','20g of bread;100g of white meat;200g of vegetables;75g of potatoes;1 dessert cream;1 peach compote','tea or infusion;40g of biscuits;150ml hot milk with cinnamon;20g dark chocolate','cucumber salad with 15ml walnut oil;omelets;200g of pulses with 5ml of olive oil;1 yogurt;Apple'),
+
+('120g of bread;30g of butter;infusion;100g of cottage cheese','20g of bread;100g of whiting;250g of potatoes;50g of goat cheese;orange','tea or infusion;60g of bread;50g of cheese;10g of almond','salad of lamb;100g of white meat;200g pasta and 20g parmesan cheese;1 vanilla yogurt;100g pineapple'),
+
+('80g of cereals;150ml of milk;coffee or tea','20g of bread;150g of whiting;200g of rice;50g of goat cheese;kiwi','tea or infusion;40g of biscuits;1 yogurt','salad of lamb;100g of white meat;200g raw vegetables;75g of rice;1 vanilla yogurt;100g pineapple'),
+
+('120g of bread;30g of butter;1 yogurt;coffee or tea','150g lean red meat;250g of raw vegetables;75g pasta with 5ml of olive oil;orange','tea or infusion;40g of biscuits;10g of nuts;1 yogurt','100g of white meat;150g of raw vegetables;300g of potatoes;100g of white cheese;1 peach compote'),
+
+('80g of cereals;150ml of milk;coffee or tea','20g of bread;150g of whiting;75g pasta with 5ml of olive oild;50g of goat cheese;kiwi','tea or infusion;40g of biscuits;10g of nuts;yogurt','20g of wholemeal bread;100g of white meat;200g ground vegetables;15g light mayonnaise;apple'),
+
+('120g of bread;30g of butter;2 whole eggs;coffee or tea','20g of bread;150g of whiting;300g of potatoes;150g of raw vegetables;orange','tea or infusion;40g of biscuits;150ml hot milk with cinnamom;20g dark chocolate','20g of wholemeal bread;cucumber salad with 15ml walnut oil;100g of red meat;200g of pulses with 5ml of olive oil;15g light mayonnaise;apple'),
+
+('120g of bread;30g of butter;1 yogurt;coffee or tea', '20g of bread;100g of read meat;200g of vegetables;100g pasta;1 fruit yogurt;orange','tea or infusion;40g of biscuits;150ml of milk','Cucumber salad with 15ml walnut oil;100g of fish;200g of pulses with 5ml of olive oil;1 yogurt;1 kiwi'),
+
+('80g of cereals;150 ml of milk;coffee or tea','20g of bread;100g of white meat;200g of vegetables;75g of potatoes;1 dessert cream;1 peach compote','tea or infusion;40g of biscuits;150ml hot milk with cinnamon;20g dark chocolate','cucumber salad with 15ml walnut oil;omelets;200g of pulses with 5ml of olive oil;1 yogurt;Apple'),
+
+('120g of bread;30g of butter;infusion;100g of cottage cheese','20g of bread;100g of whiting;250g of potatoes;50g of goat cheese;orange','tea or infusion;60g of bread;50g of cheese;10g of almond','salad of lamb;100g of white meat;200g pasta and 20g parmesan cheese;1 vanilla yogurt;100g pineapple'),
+
+('80g of cereals;150ml of milk;coffee or tea','20g of bread;150g of whiting;200g of rice;50g of goat cheese;kiwi','tea or infusion;40g of biscuits;1 yogurt','salad of lamb;100g of white meat;200g raw vegetables;75g of rice;1 vanilla yogurt;100g pineapple'),
+
+('120g of bread;30g of butter;1 yogurt;coffee or tea','150g lean red meat;250g of raw vegetables;75g pasta with 5ml of olive oil;orange','tea or infusion;40g of biscuits;10g of nuts;1 yogurt','100g of white meat;150g of raw vegetables;300g of potatoes;100g of white cheese;1 peach compote'),
+
+('80g of cereals;150ml of milk;coffee or tea','20g of bread;150g of whiting;75g pasta with 5ml of olive oild;50g of goat cheese;kiwi','tea or infusion;40g of biscuits;10g of nuts;yogurt','20g of wholemeal bread;100g of white meat;200g ground vegetables;15g light mayonnaise;apple'),
+
+('120g of bread;30g of butter;2 whole eggs;coffee or tea','20g of bread;150g of whiting;300g of potatoes;150g of raw vegetables;orange','tea or infusion;40g of biscuits;150ml hot milk with cinnamom;20g dark chocolate','20g of wholemeal bread;cucumber salad with 15ml walnut oil;100g of red meat;200g of pulses with 5ml of olive oil;15g light mayonnaise;apple'),
+
+('120g of bread;30g of butter;1 yogurt;coffee or tea', '20g of bread;100g of read meat;200g of vegetables;100g pasta;1 fruit yogurt;orange','tea or infusion;40g of biscuits;150ml of milk','Cucumber salad with 15ml walnut oil;100g of fish;200g of pulses with 5ml of olive oil;1 yogurt;1 kiwi'),
+
+('80g of cereals;150 ml of milk;coffee or tea','20g of bread;100g of white meat;200g of vegetables;75g of potatoes;1 dessert cream;1 peach compote','tea or infusion;40g of biscuits;150ml hot milk with cinnamon;20g dark chocolate','cucumber salad with 15ml walnut oil;omelets;200g of pulses with 5ml of olive oil;1 yogurt;Apple'),
+
+('120g of bread;30g of butter;infusion;100g of cottage cheese','20g of bread;100g of whiting;250g of potatoes;50g of goat cheese;orange','tea or infusion;60g of bread;50g of cheese;10g of almond','salad of lamb;100g of white meat;200g pasta and 20g parmesan cheese;1 vanilla yogurt;100g pineapple'),
+
+('80g of cereals;150ml of milk;coffee or tea','20g of bread;150g of whiting;200g of rice;50g of goat cheese;kiwi','tea or infusion;40g of biscuits;1 yogurt','salad of lamb;100g of white meat;200g raw vegetables;75g of rice;1 vanilla yogurt;100g pineapple'),
+
+('120g of bread;30g of butter;1 yogurt;coffee or tea','150g lean red meat;250g of raw vegetables;75g pasta with 5ml of olive oil;orange','tea or infusion;40g of biscuits;10g of nuts;1 yogurt','100g of white meat;150g of raw vegetables;300g of potatoes;100g of white cheese;1 peach compote'),
+
+('80g of cereals;150ml of milk;coffee or tea','20g of bread;150g of whiting;75g pasta with 5ml of olive oild;50g of goat cheese;kiwi','tea or infusion;40g of biscuits;10g of nuts;yogurt','20g of wholemeal bread;100g of white meat;200g ground vegetables;15g light mayonnaise;apple'),
+
+('120g of bread;30g of butter;2 whole eggs;coffee or tea','20g of bread;150g of whiting;300g of potatoes;150g of raw vegetables;orange','tea or infusion;40g of biscuits;150ml hot milk with cinnamom;20g dark chocolate','20g of wholemeal bread;cucumber salad with 15ml walnut oil;100g of red meat;200g of pulses with 5ml of olive oil;15g light mayonnaise;apple'),
+
+('80g of cereals;150 ml of milk;coffee or tea','20g of bread;100g of white meat;200g of vegetables;75g of potatoes;1 dessert cream;1 peach compote','tea or infusion;40g of biscuits;150ml hot milk with cinnamon;20g dark chocolate','cucumber salad with 15ml walnut oil;omelets;200g of pulses with 5ml of olive oil;1 yogurt;Apple'),
+
+('120g of bread;30g of butter;infusion;100g of cottage cheese','20g of bread;100g of whiting;250g of potatoes;50g of goat cheese;orange','tea or infusion;60g of bread;50g of cheese;10g of almond','salad of lamb;100g of white meat;200g pasta and 20g parmesan cheese;1 vanilla yogurt;100g pineapple');
+
+
+select * from underweight_male_meal;

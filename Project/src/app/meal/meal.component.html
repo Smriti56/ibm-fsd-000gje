@@ -1,0 +1,103 @@
+<ul class="ul">
+    <li class="li title">
+        <a routerLink='../home'><img class="image" src="../../favicon.ico"> Fitness Tracker</a>
+    </li>
+    <li class="li"><a (click)="signout()">Sign out</a></li>
+    <li class="li"><a routerLink='../profile'>Profile</a></li>
+
+</ul>
+
+<div class="row">
+    <div class="col-sm-7">
+        <br><br>
+        <ul class="nav nav-tabs">
+            <li class="pill"><a routerLink='../home'>Workout</a></li>
+            <li class="pill active"><a>Meal</a></li>
+
+        </ul>
+        <br>
+        <br>
+        <h2 style="text-align: center;">Here is 30 Days Meal plan for you.. </h2><br>
+        <div *ngFor="let meal of meal" class="day">
+            <button type="button" data-toggle="modal" class="day1 btn btn-primary" [attr.data-target]="'#day'+meal.day">Day {{meal.day}}</button>
+            <div class="modal" id="day{{meal.day}}">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h2>Day {{meal.day}}</h2>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="content">
+                                <h2>Breakfast</h2>
+                                <ul *ngFor='let breakfast of meal.breakfast'>
+                                    <li>{{breakfast}}</li>
+                                </ul>
+                            </div>
+                            <br>
+                            <div class="content">
+                                <h2>Lunch</h2>
+                                <ul *ngFor='let lunch of meal.lunch'>
+                                    <li>{{lunch}}</li>
+                                </ul>
+                            </div><br>
+                            <div class="content">
+                                <h2> Snacks</h2>
+                                <ul *ngFor='let snacks of meal.snack'>
+                                    <li>{{snacks}}</li>
+                                </ul>
+                            </div><br>
+                            <div class="content">
+                                <h2>Dinner</h2>
+                                <ul *ngFor='let dinner of meal.dinner'>
+                                    <li>{{dinner}}</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+        <div class="jumbotron">
+            <h3 class="modal-title" style="text-align: center; font-family: 'Courier New', Courier, monospace;">
+                <b><i>Welcome {{user.firstName}} {{user.lastName}}</i></b></h3>
+
+            <div *ngIf="user.category == 'underweight_male' || user.category == 'underweight_female'" class="modal-body">
+                <h3 style="text-align: center;font-family: 'Courier New', Courier, monospace;"><b>BODY MASS INDEX : {{user.bmi}}</b>
+                </h3>
+                <div class="alert alert-warning">
+                    <h3 style="text-align: center;color:orange; font-family: 'Courier New', Courier, monospace;"><b>You are underweight</b></h3>
+                </div>
+            </div>
+            <div *ngIf="user.category == 'overweight_male' || user.category == 'overweight_female'" class="modal-body">
+                <h3 style="text-align: center;font-family: 'Courier New', Courier, monospace; "><b>BODY MASS INDEX : {{user.bmi}}</b>
+                </h3>
+                <div class="alert alert-danger">
+                    <h3 style="text-align: center;color:red; font-family: 'Courier New', Courier, monospace; "><b>You are overweight</b></h3>
+                </div>
+            </div>
+
+            <div *ngIf="user.category=='normal_male' || user.category=='normal_female' " class="modal-body ">
+                <h3 style="text-align: center;font-family: 'Courier New', Courier, monospace; "><b>BODY MASS INDEX : {{user.bmi}}</b>
+                </h3>
+                <div class="alert alert-success">
+                    <h3 style="text-align: center;color:green; font-family: 'Courier New', Courier, monospace; "><b>You have normal BMI</b></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

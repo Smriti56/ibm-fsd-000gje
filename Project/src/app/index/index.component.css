@@ -1,0 +1,393 @@
+.main_div {
+    background-color: lightblue;
+    height: 1700px;
+    width: 1040px;
+    margin-left: 260px;
+    background-color: rgb(41, 52, 64);
+}
+
+.header {
+    display: block;
+    height: 77px;
+    background-color: #fafafb;
+    width: 1040px;
+    float: left;
+}
+
+.h0 {
+    display: block;
+    height: 77px;
+    width: 100px;
+    background-color: #fafafb;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.h0 img {
+    display: block;
+    height: 60px;
+    width: 80px;
+    margin-left: 20px;
+    float: left;
+}
+
+.h1 {
+    display: block;
+    height: 77px;
+    width: 600px;
+    background-color: #fafafb;
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.h {
+    display: block;
+    height: 77px;
+    width: 340px;
+    background-color: #fafafb;
+    float: left;
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 120px;
+    padding-top: 23px;
+}
+
+.h a {
+    width: 65px;
+    height: 35px;
+    font-size: 15px;
+}
+
+.content {
+    display: block;
+    height: 1000px;
+    width: 1040px;
+    float: left;
+    background-color: blue;
+}
+
+.c1 {
+    display: block;
+    height: 500px;
+    width: 1040px;
+    float: left;
+}
+
+.c1_up {
+    display: block;
+    height: 400px;
+    width: 1040px;
+    float: left;
+    background: url("../images/shoe.jpg") no-repeat;
+    background-size: cover;
+}
+
+.c1_up_1 {
+    display: block;
+    height: 400px;
+    width: 520px;
+    float: left;
+}
+
+.c1_up_2 {
+    display: block;
+    height: 400px;
+    width: 520px;
+    float: left;
+}
+
+.c1_up_2 a {
+    margin-top: 300px;
+    margin-left: 300px;
+    width: 190px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.c1_down {
+    display: block;
+    height: 100px;
+    width: 1040px;
+    float: left;
+    background-color: rgb(41, 52, 64);
+}
+
+.c1_down_1 {
+    display: block;
+    height: 100px;
+    width: 520px;
+    float: left;
+    color: white;
+    background-color: rgb(41, 52, 64);
+}
+
+.c1_down_1 h1 {
+    font-weight: bolder;
+    margin-left: 60px;
+}
+
+.c1_down_1 h4 {
+    font-weight: lighter;
+    margin-left: 60px;
+    color: gray;
+}
+
+.c1_down_2 {
+    display: block;
+    height: 100px;
+    width: 520px;
+    color: white;
+    float: left;
+    background-color: rgb(41, 52, 64);
+}
+
+.c1_down_2 h1 {
+    font-weight: bolder;
+    margin-left: 60px;
+}
+
+.c1_down_2 h4 {
+    font-weight: lighter;
+    margin-left: 60px;
+    color: gray;
+}
+
+.c2 {
+    display: block;
+    height: 500px;
+    width: 1040px;
+    float: left;
+    background-color: white;
+}
+
+.c2_up {
+    display: block;
+    height: 150px;
+    width: 1040px;
+    float: left;
+    background-color: white;
+}
+
+.c2_up h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.c2_up p {
+    color: lightgray;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.c2_mid {
+    display: block;
+    height: 175px;
+    width: 1040px;
+    float: left;
+    background-color: white;
+}
+
+.c2_mid_1 {
+    display: block;
+    height: 175px;
+    width: 520px;
+    float: left;
+    background-color: white;
+}
+
+.c2_mid_1 p {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: rgb(151, 150, 150);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.c2_mid_2 {
+    display: block;
+    height: 150px;
+    width: 520px;
+    float: left;
+    background-color: white;
+}
+
+.c2_mid_2 p {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: rgb(151, 150, 150);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.c2_down {
+    display: block;
+    height: 150px;
+    width: 1040px;
+    float: left;
+    background-color: white;
+}
+
+.c2_down_1 {
+    display: block;
+    height: 150px;
+    width: 520px;
+    float: left;
+    background-color: white;
+}
+
+.c2_down_1 p {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: rgb(151, 150, 150);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.c2_down_2 {
+    display: block;
+    height: 150px;
+    width: 520px;
+    float: left;
+    background-color: white;
+}
+
+.c2_down_2 p {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: rgb(151, 150, 150);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cost {
+    display: block;
+    width: 1040px;
+    height: 700px;
+    background-color: pink;
+    float: left;
+    padding-bottom: 30px;
+}
+
+.cost_1 {
+    display: block;
+    width: 1040px;
+    height: 200px;
+    background-color: #eff1f3;
+    float: left;
+}
+
+.cost_1 h1 {
+    margin-top: 55px;
+    padding-bottom: 15px;
+}
+
+.cost_1 h4 {
+    color: gray;
+}
+
+.cost_2 {
+    display: block;
+    width: 520px;
+    height: 500px;
+    background-color: #eff1f3;
+    float: left;
+    padding-bottom: 20px;
+}
+
+.cost_2 h1 {
+    margin-bottom: 10px;
+}
+
+.cost_2 ul {
+    margin-left: 50px;
+    margin-right: 20px;
+    color: rgb(150, 150, 150);
+}
+
+.cost_2 p {
+    font-size: 70px;
+    font-weight: bolder;
+    font-style: initial;
+    color: rgb(66, 189, 238);
+    margin-left: 270px;
+}
+
+.cost_2 h3 {
+    margin-left: 250px;
+    color: rgb(66, 189, 238);
+}
+
+.cost_2 a {
+    margin-left: 250px;
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: 17px;
+}
+
+.cost_3 {
+    display: block;
+    width: 520px;
+    height: 500px;
+    background-color: white;
+    float: left;
+    border-radius: 2px;
+}
+
+.cost_3 p {
+    font-size: 70px;
+    font-weight: bolder;
+    font-style: initial;
+    color: rgb(66, 189, 238);
+    margin-left: 270px;
+}
+
+.cost_3 h3 {
+    margin-left: 250px;
+    color: rgb(66, 189, 238);
+}
+
+.cost_3 ul {
+    margin-left: 50px;
+    margin-right: 20px;
+    color: rgb(150, 150, 150);
+}
+
+.cost_3 a {
+    margin-left: 250px;
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: 17px;
+}
+
+.footer {
+    display: block;
+    height: 50px;
+    float: left;
+    width: 1040px;
+    background-color: rgb(41, 52, 64);
+    padding: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.footer h4 {
+    margin-left: 400px;
+}
+
+.join {
+    margin-bottom: 5px;
+}
+
+.hr {
+    color: white;
+    border: 1px solid white;
+}

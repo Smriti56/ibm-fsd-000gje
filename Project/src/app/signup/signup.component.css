@@ -1,0 +1,95 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    opacity: 1;
+  }
+  
+  li {
+      font-size: 25px;
+      font-family: 'Courier New', Courier, monospace;
+    float: right;
+    padding-right: 10px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+  .title{
+      float: left;
+  }
+
+  .image{
+    
+      height: 40px;
+      width: 40px;
+  }
+  
+  .background{
+    background-image: url("../images/background.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   
+  }
+
+  .form-class{
+    background-color:black;
+    opacity: 0.9;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 50;
+    height: 90vh;
+    
+  }
+
+  label{
+    color: white;
+    float: left;
+    font-size: 30x;
+   
+  }
+
+  .form-image{
+    width: 100px;
+    height: 100px;
+  }
+
+  .qoute{
+    font-family:'Courier New', Courier, monospace;
+    padding:30px;
+    font-size: 30px; 
+    color:white;
+    margin-top: 400px;
+    
+  }
+
+  form{
+    font-size: 20px;
+  }
+  .danger{
+    text-align: left;
+    color: red;
+    font-size: 15px;
+  }
+
+ select, input,button{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+  }

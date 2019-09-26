@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: overweight-female-exercise-service
+    
+  datasource:
+    url: jdbc:mysql://localhost:3306/fitness_tracker
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      
+      
+server:
+  port: 8010
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      
+
