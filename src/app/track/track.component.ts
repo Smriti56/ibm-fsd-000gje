@@ -113,6 +113,31 @@ export class TrackComponent  {
     this.barChartData[1].data = this.doneAmount
    // console.log(this.barChartData[0])
     //console.log(this.barChartData[1])
+
+    
+    this._url = `http://b4ibm15.iiht.tech:8008/saveDetails`
+  fetch(this._url,{
+    method : "POST",
+    headers: {
+        "content-type": "application/json"
+       },
+    body : JSON.stringify({
+      
+       email :localStorage.getItem("email"),
+       dayno : this.dayId,
+       workout: this.doneAmount
+    })
+})
+.then(res=>res.json())
+.then(data=>{
+  if(data.message!=null){
+    console.log(data.message);
+  }
+ 
+})
+
+    
+    
   }
 
   
