@@ -1,0 +1,144 @@
+<div class="background row">
+    <ul>
+        <li class="title">
+            <a routerLink='../login'><img class="image" src="../../favicon.ico"> Fitness Tracker</a>
+        </li>
+
+        <li><a routerLink='../login'>Login</a></li>
+        <li><a routerLink='../signup'>Sign Up</a></li>
+        <li><a routerLink='../index'>Home</a></li>
+    </ul>
+
+
+    <div class="form-class">
+        <br>
+        <img class="form-image " src="../../favicon.ico">
+
+        <h2 style="color: white"><b>WELCOME</b></h2>
+        <br><br><br>
+
+        <div *ngIf="error">
+            <div class="alert alert-danger">
+                <strong style="color: black; font-size: 20px;">{{error}}</strong>
+            </div>
+        </div>
+        <form #loginForm="ngForm" (submit)="edit(loginForm.value)">
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" id="email" placeholder="Email" class="form-control" name="email" ngModel required/>
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" class="form-control" placeholder="password" name="password" ngModel required/>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Let's Go</button>&nbsp;
+            <button class="btn btn-default" (click)="signin()">Login With 
+                <img src="http://transformations-spafitness.com/wp-content/uploads/2013/11/google-logo-icon-PNG-Transparent-Background-1-300x300.png" height="25px" width="25px">
+            </button>
+        </form>
+        <br>
+        <button type="button" class="btn btn-link" id="model" data-toggle="modal" data-target="#myModal" style="color: white">
+                Forget Password?
+              </button>
+
+
+
+    </div>
+
+</div>
+
+
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h3 class="modal-title">Please enter valid email</h3>
+                <button type="button" class="close" #closeAddExpenseModal data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+
+                <div *ngIf="error1">
+                    <div class="alert alert-danger">
+                        <strong style="color: black; font-size: 20px;">{{error1}}</strong>
+                    </div>
+                </div>
+                <form #email="ngForm" (submit)="changepassword(email.value,$event)">
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" id="email" placeholder="Email" class="form-control" name="email" ngModel required/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<button id="openModal" #openModal [hidden]="true" data-toggle="modal" data-target="#myModal1"></button>
+
+<div class="modal fade" id="myModal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h3 class="modal-title">Please enter token recieved</h3>
+                <button type="button" class="close" #closeAddExpenseModal1 data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+
+                <div *ngIf="error1">
+                    <div class="alert alert-danger">
+                        <strong style="color: black; font-size: 20px;">{{error1}}</strong>
+                    </div>
+                </div>
+                <form #passwordForm="ngForm" (submit)="loginPassword(passwordForm.value,$event)">
+                    <div class="form-group">
+                        <label for="password">Token</label>
+                        <input type="password" id="password" placeholder="token" class="form-control" name="password" ngModel required/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<button id="openModal1" #openModal1 [hidden]="true" data-toggle="modal" data-target="#myModal2"></button>
+
+<div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h3 class="modal-title">Please enter new password</h3>
+                <button type="button" class="close" #closeAddExpenseModal2 data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+
+
+                <form #changeForm="ngForm" (submit)="updatePassword(changeForm.value,$event)">
+                    <div class="form-group">
+                        <label for="password">password</label>
+                        <input type="password" id="password" placeholder="new password" class="form-control" name="password" ngModel required/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

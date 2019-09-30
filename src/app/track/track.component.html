@@ -1,0 +1,60 @@
+<ul class="ul">
+    <li class="li title">
+        <a routerLink='/home'><img class="image" src="../../favicon.ico"> Fitness Tracker</a>
+    </li>
+    <li class="li"><a (click)="signout()">Sign out</a></li>
+    <li class="li"><a routerLink='/profile'>Profile</a></li>
+
+</ul>
+
+
+<div class="col-sm-5">
+
+    <h1 style="font-family: 'Acme', sans-serif;">Day {{dayId}} Activity Tracker</h1><br><br>
+    <div class="row">
+        <div class="col-sm-5">
+            <span class="badge badge-info">Excerise Name</span>
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+            <span style="background-color: rgb(243, 155, 224)" class="badge badge-danger">Expected</span>
+        </div>
+        <div class="col-sm-2">
+            <span style="background-color: rgb(135, 192, 245)" class="badge badge-info">Actual</span>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <form #myForm="ngForm" (submit)="getValues(myForm.value)" ngNativeValidate>
+        <div class="divMain" *ngFor="let e of exercise ; let i = index">
+            <div class="form-group row">
+                <div class="col-sm-5">
+
+                    <input class="form-control" id="ex3" type="text" value={{e.exerciseName}} disabled>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2">
+
+                    <input class="form-control" id="ex2" type="text" value={{e.amount}} disabled>
+                </div>
+                <div class="col-sm-2">
+                    <input class="form-control" id="ex1" type="number" name="{{'value'+i}}" min="5" max={{e.amount}} ngModel required>
+                </div>
+
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Evaluate</button> &nbsp;
+        <button type="button" routerLink='/home' class="btn btn-primary">Back to home</button>
+    </form>
+    <br>
+
+</div>
+<div class="col-sm-7"><br><br><br>
+    <div style="display:block">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType">
+              </canvas>
+    </div>
+
+</div>
