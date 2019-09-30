@@ -1,0 +1,96 @@
+<!--more code here-->
+<ul class="ul">
+    <li class="li title">
+        <a routerLink='../home'><img class="image" src="../../favicon.ico"> Fitness Tracker</a>
+    </li>
+    <li class="li"><a (click)="signout()">Sign out</a></li>
+    <li class="li"><a routerLink='../profile'>Profile</a></li>
+
+</ul>
+
+<div class="row">
+    <div class="col-sm-7">
+
+        <br><br>
+        <ul class="nav nav-tabs">
+            <li class="pill active"><a>Workout</a></li>
+            <li class="pill"><a routerLink='../meal'>Meal</a></li>
+        </ul>
+        <br>
+        <br>
+        <h1 style="text-align: center;font-family: 'Acme', sans-serif;">
+            Here is 30 Days Workout plan for you.. </h1>
+        <br>
+        <div *ngFor="let wo of workout" class="day">
+            <button data-toggle="modal" class="day1 btn btn-primary" [attr.data-target]="'#day'+wo.day">Day {{wo.day}}</button>
+            <div id="day{{wo.day}}" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h2>Day {{wo.day}}</h2>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="divMain" *ngFor="let exercise of wo.workout">
+                                <div class="card mainCard">
+                                    <img class="imageCard card-img-top" src="{{exercise.exerciseUrl}}" alt="REST DAY">
+                                    <div class="cardBody card-body">
+                                        <h3 class="card-title"><b>{{exercise.exerciseName}}</b></h3>
+                                        <p style="text-align: justify;padding: 3px;" class="card-text">{{exercise.exerciseDescription}}<br> <br>
+                                            <span style="font-size: 30px"> Amount : x{{exercise.amount}}</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">back</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal" routerLink='../track/{{wo.day}}'>Evaluate Results</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col-sm-4">
+        <div style="height: 35vh" class="jumbotron">
+            <h3 class="modal-title" style="text-align: center;  font-family: 'Courier New', Courier, monospace;">
+                <b><i>Welcome {{user.firstName}} {{user.lastName}}</i></b></h3>
+
+            <div *ngIf="user.category == 'underweight_male' || user.category == 'underweight_female'" class="modal-body">
+                <h3 style="text-align: center;font-family: 'Courier New', Courier, monospace;"><b>BODY MASS INDEX : {{user.bmi}}</b>
+                </h3>
+                <div class="alert alert-warning">
+                    <h3 style="text-align: center;color:orange; font-family: 'Courier New', Courier, monospace;"><b>You are underweight</b></h3>
+                </div>
+            </div>
+            <div *ngIf="user.category == 'overweight_male' || user.category == 'overweight_female'" class="modal-body">
+                <h3 style="text-align: center;font-family: 'Courier New', Courier, monospace; "><b>BODY MASS INDEX : {{user.bmi}}</b>
+                </h3>
+                <div class="alert alert-danger">
+                    <h3 style="text-align: center;color:red; font-family: 'Courier New', Courier, monospace; "><b>You are overweight</b></h3>
+                </div>
+            </div>
+
+            <div *ngIf="user.category=='normal_male' || user.category=='normal_female' " class="modal-body ">
+                <h3 style="text-align: center;font-family: 'Courier New', Courier, monospace; "><b>BODY MASS INDEX : {{user.bmi}}</b>
+                </h3>
+                <div class="alert alert-success">
+                    <h3 style="text-align: center;color:green; font-family: 'Courier New', Courier, monospace; "><b>You have normal BMI</b></h3>
+                </div>
+            </div>
+        </div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Feed-icon.svg/1200px-Feed-icon.svg.png" width="20px" height="20px"> <b>RSS Feed from World Health Oranization</b><br>
+        <div style="overflow-y: scroll;border-left: 1px solid black; height: 45vh; padding:10px;">
+            <div *ngFor="let feed of feeds">
+                <h3>{{feed.title}}</h3>
+                <h4>{{feed.author}}-{{feed.pubDate | date:'dd-MM-yyyy'}}</h4>
+                <P style="text-align: justify; margin-right:20px;"><em>{{feed.description | stripHtmlTags}}</em></P>
+            </div>
+        </div>
+    </div>
+
+</div>
