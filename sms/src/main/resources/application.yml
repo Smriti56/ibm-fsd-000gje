@@ -1,0 +1,7 @@
+
+spring:
+  application:
+    name: sms-service 
+server:
+  port: 8001  
+
