@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<bean name="ds" class="org.apache.commons.dbcp.BasicDataSource">
+<property name="url" value="jdbc:mysql://localhost:3306/hr"/>
+<property name="username" value="root"/>
+<property name="password" value="root"/>
+<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+</bean>
+
+
+
+<bean name="EmployeeDao" class="com.Spring.database.bean.EmployeeDao">
+<property name="dataSource" ref="ds"/>
+</bean>
+
+
+
+
+</beans>

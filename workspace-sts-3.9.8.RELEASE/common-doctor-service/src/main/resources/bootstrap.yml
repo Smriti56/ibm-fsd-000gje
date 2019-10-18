@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: doctor
+    
+  cloud:
+    config:
+      uri: http://localhost:8001/
+  datasource:
+    url: jdbc:mysql://localhost:3306/hr
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      
+server:
+  port: 8004
+  
+  
+
+  
